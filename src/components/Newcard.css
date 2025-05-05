@@ -1,0 +1,129 @@
+#Tabview {
+    width: 87.5vw;              /* 1400px based on full HD width */
+    max-height: max-content;
+    position: absolute;
+    top: 9.7rem;                /* 155px */
+    left: 21.875rem;           /* 350px */
+  }
+  
+  #Tabview2 {
+    width: 71.875vw;           /* 1150px */
+    max-height: max-content;
+    position: absolute;
+    top: 9.7rem;
+    left: 21.875rem;
+  }
+  
+  #titlerhs {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    position: absolute;
+    bottom: 12.8rem;           /* 205px */
+    left: 35.625rem;           /* 570px */
+  }
+  
+  #inputsrhs {
+    position: absolute;
+    left: 53.125rem;           /* 850px */
+    bottom: 13.125rem;         /* 210px */
+  }
+  
+  #sumbitbtn {
+    color: white;
+    background-color: #1f7ef2;
+    width: 6.875rem;           /* 110px */
+    height: 2.5rem;            /* 40px */
+    left: 50.625rem;           /* 810px */
+    bottom: 4.46rem;           /* 65px */
+    position: absolute;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
+    border-radius: 0.5625rem;  /* 9px */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  #sumbitbtn:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  }
+  
+  #Loadbtn {
+    color: white;
+    background-color: #1f7ef2;
+    position: absolute;
+    left: 58.125rem;           /* 930px */
+    bottom: 4.06rem;
+  }
+  
+  #titlelhs,
+  #titlelhs1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+  }
+  
+  #titlerhs1 {
+    position: absolute;
+    bottom: 5.5rem;            /* 88px */
+    right: 21.875rem;          /* 350px */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+  }
+  
+  #inputlhs1 {
+    position: absolute;
+    top: 8.125rem;             /* 130px */
+    left: 14.375rem;           /* 230px */
+  }
+  
+  #inputrhs1 {
+    position: absolute;
+    top: 7.5rem;               /* 120px */
+    left: 53.125rem;           /* 850px */
+  }
+  
+  #it1 {
+    padding: 0;
+    width: 15.625rem;          /* 250px */
+    height: 2.575rem;          /* 30px */
+    color: #3a3838;
+    border: 0.0938rem solid hsl(0, 12%, 84%);
+    border-radius: 0.3125rem;  /* 5px */
+    border-right: 0.4375rem solid #a2c6dd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #inputtext {
+    padding: 0;
+    width: 15rem;              /* 240px */
+    height: 2.5rem;            /* 40px */
+    color: #3a3838;
+    border: 0.0938rem solid hsl(0, 12%, 84%);
+    border-radius: 0.3125rem;
+    border-right: 0.4375rem solid #a2c6dd;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  #Breadcrumb {
+    position: absolute;
+    top: -3.75rem;             /* -60px */
+    left: -0.1875rem;          /* -3px */
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    #Tabview, #Tabview2 {
+      width: 95vw;
+      left: 2.5vw;
+    }
+  
+    #sumbitbtn, #Loadbtn {
+      position: static;
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+    

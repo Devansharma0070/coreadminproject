@@ -1,0 +1,17 @@
+.tablecard{
+
+    position: absolute;
+    width: 1200px;
+    height: 700px;
+    left: 350px;
+    top: 140px;
+}
+#Datatable{
+
+    position: absolute;
+    width: 1150px;
+    height: 100px;
+
+}
+
+

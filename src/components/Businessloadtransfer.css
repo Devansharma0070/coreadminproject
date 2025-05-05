@@ -1,0 +1,49 @@
+#businesscontainer{
+    position: absolute;
+    width: 1200px;
+    height: 1400px;
+    left: 350px;
+    top: 140px;
+}
+
+#businesscard{
+    width: 68rem;
+    height:40rem;
+    margin-left: 25px;
+}
+  
+.sumbitbtn {
+    color: white;
+    background-color: #1f7ef2;
+    width: 6.875rem;           
+    height: 2.5rem;            
+    left: 65.625rem;           
+    bottom: 43.06rem;           
+    position: absolute;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
+    border-radius: 0.5625rem;  
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .sumbitbtn:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  }
+  .sumbitbtn1 {
+    color: white;
+    background-color: #1f7ef2;
+    width: 6.875rem;
+    height: 2.5rem;
+ 
+  
+    margin-left: 60.625rem;  
+    margin-bottom: 66.06rem;
+
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
+    border-radius: 0.5625rem;
+    transition: box-shadow 0.3s ease-in-out;
+    display: inline-block; 
+}
+
+  .sumbitbtn1:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  }

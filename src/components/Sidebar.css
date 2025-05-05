@@ -1,0 +1,5 @@
+#Sidebar {
+    width: 20vw;           /* approx 305px on 1920px-wide screen */
+    height: 75vh;          /* scales with viewport height */
+    border-radius: 1.875rem; /* 30px → 30/16 = 1.875rem */
+}

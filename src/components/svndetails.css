@@ -1,0 +1,60 @@
+#svnbutton {
+    left: 20px;
+    top: 10px;
+    position: absolute; 
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 8px; /
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+#svnbutton:hover {
+    background-color: #0056b3; 
+}
+
+#svndatatable {
+    width: 40rem;
+     height: 440px;
+    margin: 0 auto; 
+    padding: 1rem; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#svncard{
+    width: 1200px;
+   height: 590px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#svndropdown{
+    left: 0px;
+    top: 62px;
+    position: absolute;
+}
+
+
+#svntogglebutton{
+    left: 1350px;
+    top: 190px;
+    position: absolute; 
+    background-color: #157ae7; /* Blue background */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 8px; /
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+#chartTypeDropdown{
+    left: 1350px;
+    top: 235px;
+    position: absolute; 
+
+
+}

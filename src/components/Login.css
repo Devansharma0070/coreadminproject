@@ -1,0 +1,199 @@
+#logo {
+  position: absolute;
+  top: -275px;
+  width: 410px;
+  left: 60px;
+  box-shadow: 2PX 10px 8px rgba(12, 12, 12, 0.5);
+  opacity: 1.25;
+
+  transition: box-shadow 0.3s;
+}
+
+
+#lblLogin {
+  font-weight: 500; 
+  font-size: xxx-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login-container {
+  width: 560px;
+  height: 1000px;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  background-color: #aca3a3;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(250, 46, 46, 0.1);
+  float: right;
+  margin-right: -282px;
+  margin-top: -525px;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#ip {
+  float:left;
+  margin-top: -10px;
+  margin-left: -270px;
+}
+
+#lblLogin {
+  margin-top: 200px;
+}
+
+#username {
+  margin-top: 20px;
+  width: 270px; 
+  
+}
+#username:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+#password {
+  position: relative;
+  top: -50px; 
+  width: auto;
+  height: auto; 
+}
+#password:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+
+}
+
+#button {
+  position: relative;
+  top: -60px;
+  width: 270px; 
+}
+#button:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+ 
+}
+
+#cap {
+  position: relative;
+  top: -100px;
+  width: 273px; 
+}
+#cap:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+
+}
+
+#capbox {
+   position: relative;
+   top: -80px; 
+}
+#capbox:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+
+}
+
+
+
+#logo {
+  position: absolute;
+  top: -255px;
+  width: 400px;
+  left: 60px;
+}
+
+#lblLogin {
+  font-weight: 500; 
+  font-size: xxx-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login-container {
+  width: 560px;
+  height: 1000px;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  float: right;
+  margin-right: -282px;
+  margin-top: -525px;
+}
+
+#ip {
+  float: left;
+  margin-top: -10px;
+  margin-left: -270px;
+}
+
+
+
+#lblLogin {
+  margin-top: 200px;
+}
+
+#username {
+  margin-top: 20px;
+  width: 270px; 
+
+}
+
+#password {
+  position: relative;
+  top: -50px; 
+  width: auto;
+  height: auto;
+
+}
+
+#button {
+  position: relative;
+  top: -60px;
+  width: 270px; 
+}
+
+#cap {
+  position: relative;
+  top: -100px;
+  width: 273px; 
+}
+
+#capbox {
+  position: relative;
+  top: -80px;
+
+}
+
+#refreshbutton {
+    position: absolute;
+    top: 503px;
+    border: none;
+    background-color: #f0f0f0;
+    
+}
+
+.App{
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.background {
+  background-image: url('src/Images/loginbanner.jpg');
+  background-size: cover;  
+  background-position: center;
+  height: 100vh;            
+  width: 83vw;              
+  position: fixed;          
+  top: 0;
+  left: 0;
+       
+  opacity: 0.8;           
+  
+
+}

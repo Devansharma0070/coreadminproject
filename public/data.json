@@ -1,0 +1,153 @@
+[
+
+  {
+    "priority": 1, "controlid": "101101", "Category": "Card Number", "Rule": "Card Number Check", "Accountverification": "Applicable", "Internalresposecode": "03 = Invalid Card Number", "Responsecode": "14 = Invalid card number", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 2, "controlid": "101102", "Category": "Trancode Mapping", "Rule": "Trancode Mapping Check", "Accountverification": "Applicable", "Internalresposecode": "07 = Trancode Mapping Not Found", "Responsecode": "12 = Invalid transaction", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 3, "controlid": "101126", "Category": "Available Balance Check", "Rule": "Available Balance Check", "Accountverification": "Not Applicable", "Internalresposecode": "72 = Insufficient Funds", "Responsecode": "51 = Not sufficient funds", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 4, "controlid": "000502", "Category": "MCC Group", "Rule": "FCB Blocked MCCs", "Accountverification": "Not Applicable", "Internalresposecode": "104 = MCC belongs to excluded list; Decline Authorization", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 5, "controlid": "101109", "Category": "CVC", "Rule": "CVC Verification", "Accountverification": "Applicable", "Internalresposecode": "25 = Invalid CVC", "Responsecode": "63 = Security violation", "status": "Inactive", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 6, "controlid": "101110", "Category": "Expiration Date", "Rule": "Expired Card Check", "Accountverification": "Applicable", "Internalresposecode": "29 = ExpiredCard", "Responsecode": "54 = Expired card", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 7, "controlid": "101111", "Category": "Expiration Date", "Rule": "Expiration Date Check", "Accountverification": "Applicable", "Internalresposecode": "30 = Invalid Expiration Date", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 8, "controlid": "001202", "Category": "Country", "Rule": "Restricted Countries", "Accountverification": "Not Applicable", "Internalresposecode": "107 = Restricted Country; Decline", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 9, "controlid": "101116", "Category": "AVS", "Rule": "Address Verification", "Accountverification": "Applicable", "Internalresposecode": "19 = AVS Only NO Match", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+
+ 
+  {
+    "priority": 10, "controlid": "101117", "Category": "Transaction Limit", "Rule": "Single Transaction Limit", "Accountverification": "Not Applicable", "Internalresposecode": "108 = Transaction Limit Exceeded", "Responsecode": "61 = Exceeds withdrawal limit", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 11, "controlid": "101118", "Category": "Velocity Check", "Rule": "Hourly Transaction Count", "Accountverification": "Applicable", "Internalresposecode": "109 = Too many transactions", "Responsecode": "65 = Activity limit exceeded", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 12, "controlid": "101119", "Category": "Currency", "Rule": "Unsupported Currency", "Accountverification": "Not Applicable", "Internalresposecode": "110 = Invalid currency", "Responsecode": "13 = Invalid amount", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 13, "controlid": "101120", "Category": "Card Status", "Rule": "Lost/Stolen Check", "Accountverification": "Applicable", "Internalresposecode": "111 = Lost/Stolen Card", "Responsecode": "41 = Lost card", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 14, "controlid": "101121", "Category": "Merchant", "Rule": "High-Risk Merchant", "Accountverification": "Not Applicable", "Internalresposecode": "112 = High-Risk Merchant", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 15, "controlid": "101122", "Category": "Time", "Rule": "Off-Hours Transaction", "Accountverification": "Not Applicable", "Internalresposecode": "113 = Off-Hours Transaction", "Responsecode": "62 = Restricted card", "status": "Inactive", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 16, "controlid": "101123", "Category": "PIN", "Rule": "PIN Attempts Exceeded", "Accountverification": "Applicable", "Internalresposecode": "114 = PIN Attempts Exceeded", "Responsecode": "75 = PIN tries exceeded", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 17, "controlid": "101124", "Category": "Geolocation", "Rule": "IP Country Mismatch", "Accountverification": "Not Applicable", "Internalresposecode": "115 = IP Country Mismatch", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 18, "controlid": "101125", "Category": "Amount", "Rule": "Zero Amount Check", "Accountverification": "Not Applicable", "Internalresposecode": "116 = Zero Amount Transaction", "Responsecode": "13 = Invalid amount", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 19, "controlid": "101126", "Category": "3D Secure", "Rule": "3DS Authentication Failure", "Accountverification": "Applicable", "Internalresposecode": "117 = 3DS Authentication Failed", "Responsecode": "63 = Security violation", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 20, "controlid": "101127", "Category": "Recurring", "Rule": "Recurring Payment Limit", "Accountverification": "Not Applicable", "Internalresposecode": "118 = Recurring Limit Exceeded", "Responsecode": "61 = Exceeds withdrawal limit", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 21, "controlid": "101128", "Category": "Device", "Rule": "Device Fingerprint Check", "Accountverification": "Not Applicable", "Internalresposecode": "119 = Suspicious Device", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 22, "controlid": "101129", "Category": "Velocity Check", "Rule": "Daily Amount Limit", "Accountverification": "Applicable", "Internalresposecode": "120 = Daily Amount Exceeded", "Responsecode": "61 = Exceeds withdrawal limit", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 23, "controlid": "101130", "Category": "Card Scheme", "Rule": "Card Scheme Check", "Accountverification": "Not Applicable", "Internalresposecode": "121 = Unsupported Card Scheme", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 24, "controlid": "101131", "Category": "BIN", "Rule": "BIN Range Check", "Accountverification": "Not Applicable", "Internalresposecode": "122 = Invalid BIN", "Responsecode": "14 = Invalid card number", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 25, "controlid": "101132", "Category": "Account", "Rule": "Account Status Check", "Accountverification": "Applicable", "Internalresposecode": "123 = Closed Account", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 26, "controlid": "101133", "Category": "Velocity Check", "Rule": "Weekly Transaction Count", "Accountverification": "Applicable", "Internalresposecode": "124 = Weekly Limit Exceeded", "Responsecode": "65 = Activity limit exceeded", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  
+  {
+    "priority": 28, "controlid": "101135", "Category": "Merchant", "Rule": "Merchant Blacklist Check", "Accountverification": "Not Applicable", "Internalresposecode": "126 = Blacklisted Merchant", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 29, "controlid": "101136", "Category": "Cardholder", "Rule": "Name Verification", "Accountverification": "Applicable", "Internalresposecode": "127 = Name Mismatch", "Responsecode": "63 = Security violation", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 30, "controlid": "101137", "Category": "Transaction Type", "Rule": "Gambling Block", "Accountverification": "Not Applicable", "Internalresposecode": "128 = Gambling Transaction", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 31, "controlid": "101138", "Category": "Currency", "Rule": "Currency Rounding Check", "Accountverification": "Not Applicable", "Internalresposecode": "129 = Invalid Decimal Places", "Responsecode": "13 = Invalid amount", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 32, "controlid": "101139", "Category": "Velocity Check", "Rule": "Monthly Amount Limit", "Accountverification": "Applicable", "Internalresposecode": "130 = Monthly Limit Exceeded", "Responsecode": "61 = Exceeds withdrawal limit", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 33, "controlid": "101140", "Category": "IP Address", "Rule": "Proxy/VPN Detection", "Accountverification": "Not Applicable", "Internalresposecode": "131 = Proxy/VPN Detected", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 34, "controlid": "101141", "Category": "Card Scheme", "Rule": "Corporate Card Check", "Accountverification": "Applicable", "Internalresposecode": "132 = Corporate Card Restriction", "Responsecode": "62 = Restricted card", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 35, "controlid": "101142", "Category": "Account", "Rule": "Dormant Account Check", "Accountverification": "Applicable", "Internalresposecode": "133 = Dormant Account", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 36, "controlid": "101143", "Category": "Transaction Type", "Rule": "Cash Advance Block", "Accountverification": "Not Applicable", "Internalresposecode": "134 = Cash Advance Restriction", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 37, "controlid": "101144", "Category": "Address", "Rule": "PO Box Restriction", "Accountverification": "Applicable", "Internalresposecode": "135 = PO Box Address", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 38, "controlid": "101145", "Category": "Cardholder", "Rule": "Age Verification", "Accountverification": "Applicable", "Internalresposecode": "136 = Age Restriction", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 39, "controlid": "101146", "Category": "Transaction Type", "Rule": "Prepaid Card Restriction", "Accountverification": "Applicable", "Internalresposecode": "137 = Prepaid Card Block", "Responsecode": "62 = Restricted card", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 40, "controlid": "101147", "Category": "Geolocation", "Rule": "Shipping-Billing Mismatch", "Accountverification": "Applicable", "Internalresposecode": "138 = Shipping-Billing Mismatch", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 41, "controlid": "101148", "Category": "Velocity Check", "Rule": "New Card Usage", "Accountverification": "Applicable", "Internalresposecode": "139 = New Card Alert", "Responsecode": "63 = Security violation", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 42, "controlid": "101149", "Category": "Transaction Type", "Rule": "Digital Goods Block", "Accountverification": "Not Applicable", "Internalresposecode": "140 = Digital Goods Restriction", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 43, "controlid": "101150", "Category": "Merchant", "Rule": "Cross-Border Restriction", "Accountverification": "Not Applicable", "Internalresposecode": "141 = Cross-Border Block", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 44, "controlid": "101151", "Category": "Cardholder", "Rule": "PEP Check", "Accountverification": "Applicable", "Internalresposecode": "142 = PEP Identified", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 45, "controlid": "101152", "Category": "Transaction Type", "Rule": "Cryptocurrency Block", "Accountverification": "Not Applicable", "Internalresposecode": "143 = Crypto Restriction", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 46, "controlid": "101153", "Category": "Device", "Rule": "Jailbroken Device Check", "Accountverification": "Not Applicable", "Internalresposecode": "144 = Jailbroken Device", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 47, "controlid": "101154", "Category": "Account", "Rule": "Negative Balance Check", "Accountverification": "Applicable", "Internalresposecode": "145 = Negative Balance", "Responsecode": "51 = Not sufficient funds", "status": "Active", "type": "Base", "categoryprioity": "0"
+  },
+  {
+    "priority": 48, "controlid": "101155", "Category": "Transaction Type", "Rule": "Charity Donation Limit", "Accountverification": "Not Applicable", "Internalresposecode": "146 = Donation Limit Exceeded", "Responsecode": "61 = Exceeds withdrawal limit", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  },
+  {
+    "priority": 49, "controlid": "101156", "Category": "Cardholder", "Rule": "ID Document Verification", "Accountverification": "Applicable", "Internalresposecode": "147 = ID Verification Failed", "Responsecode": "63 = Security violation", "status": "Active", "type": "Static", "categoryprioity": "0"
+  },
+  {
+    "priority": 50, "controlid": "101157", "Category": "Merchant", "Rule": "Subscription Service Check", "Accountverification": "Not Applicable", "Internalresposecode": "148 = Subscription Restriction", "Responsecode": "05 = Do not honor", "status": "Active", "type": "Dynamic", "categoryprioity": "0"
+  }
+]

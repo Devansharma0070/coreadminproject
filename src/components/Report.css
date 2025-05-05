@@ -1,0 +1,75 @@
+#cardcontainer {
+    width: 90vw; /* 90% of viewport width */
+    height: 45vh; /* 45% of viewport height */
+}
+
+.cardreport,
+.cardreport1,
+.cardreport2 {
+    height: 25vh; /* uniform card height */
+}
+
+/* Replaced hardcoded positions with % and rem units */
+#periodbtn {
+    position: absolute;
+    left: 60vw;
+    top: 28vh;
+    color: #ffffff;
+    background-color: #1f7ef2;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+#gobtn {
+    position: absolute;
+    left: 67vw;
+    top: 28vh;
+    color: #ffffff;
+    background-color: #1f7ef2;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease-in-out;
+                        
+}
+
+#periodbtn:hover,
+#gobtn:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+#Closebtn {
+    position: absolute;
+    left: 25vw;
+    top: 33vh;
+    color: #ffffff;
+    background-color: #1f7ef2;
+    height: 2.4rem;
+}
+
+#sumbitbtn1 {
+    position: absolute;
+    left: 18vw;
+    top: 33vh;
+    color: #ffffff;
+    background-color: #1f7ef2;
+    height: 2.4rem;
+}
+
+#inputtextdropdown {
+    height: 2.3rem;
+}
+
+#reportcard{
+    margin-left: -40px;
+    margin-top: -26px; 
+}
+#piecard{
+    margin-left: -40px;
+    margin-top: 15px; 
+}
+#graphcard{
+    margin-left: 180px;
+    margin-top: 10px; 
+}

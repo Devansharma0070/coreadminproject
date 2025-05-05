@@ -1,0 +1,14 @@
+
+#Activitycardcontainer{
+    width: 1200px;
+    height: 330px;
+    position: absolute;
+    left: 362px;
+    top: 161px;
+}
+
+#Activitycard{
+    width:1150px;
+    height: 250px;
+    margin-top: -10px;
+}

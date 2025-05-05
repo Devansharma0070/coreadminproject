@@ -1,0 +1,44 @@
+#Administrationcardcontainer{
+    width: 70rem;
+    height:55rem;
+    margin-left: 162px;
+    margin-top: 122px;
+}
+
+#Administrationcard{
+    width: 65rem;
+    height:50rem;
+    margin-left: 12px;
+  
+}
+
+
+#Adminrhs{
+
+    margin-left: 500px;
+   margin-top: -425px;
+
+}
+
+#searchbtn{
+
+    width: 100px;
+    background-color: rgb(8, 147, 240);
+    border: none;
+    outline: none;
+    margin-left: 787px;
+    
+}
+
+#sumbitbtnn{
+    width: 100px;
+    background-color: rgb(8, 147, 240);
+    border: none;
+    outline: none;
+    
+
+}
+.password{
+    width: 252px;
+    border-radius: 7px;
+}

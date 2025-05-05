@@ -1,0 +1,60 @@
+#cardcontainerpolicy{
+
+    position: absolute;
+    width: 1370px;
+    height: 800px;
+    left: 350px;
+    top: 150px;
+}
+
+#cardpolicy{
+    
+   
+    width: 1270px;
+    height: 750px;
+    
+}
+#expensetypepanel{
+
+    position: absolute;
+    width: 360px;
+    height: 100px;
+
+}
+
+#btn{
+
+    color: rgb(242, 245, 245);
+    background-color: rgb(12, 175, 250);
+}
+#btn1{
+    color: rgb(10, 134, 206);
+    border-radius: 1000;
+    position: absolute;
+    top: 76px;
+    left: 290px;
+}
+
+
+
+#pricebtn{
+
+    padding: 0px;
+    width: 240px;
+    height: 40px;
+ color: rgb(58, 56, 56);
+    border: 1.5px solid hsl(0, 12%, 84%); 
+    border-radius: 2px; 
+    border-right: 7px solid #a2c6dd;
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    text-align: center;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+        
+
+}
