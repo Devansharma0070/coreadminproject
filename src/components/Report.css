@@ -1,19 +1,20 @@
 #cardcontainer {
-    width: 90vw; /* 90% of viewport width */
-    height: 45vh; /* 45% of viewport height */
+    width: 90vw; 
+    height: 45vh; 
 }
 
 .cardreport,
 .cardreport1,
 .cardreport2 {
-    height: 25vh; /* uniform card height */
+    height: 25vh; 
 }
 
-/* Replaced hardcoded positions with % and rem units */
+
 #periodbtn {
     position: absolute;
     left: 60vw;
     top: 28vh;
+    height: 2.4rem;
     color: #ffffff;
     background-color: #1f7ef2;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
@@ -25,6 +26,7 @@
 #gobtn {
     position: absolute;
     left: 67vw;
+    height: 2.4rem;
     top: 28vh;
     color: #ffffff;
     background-color: #1f7ef2;
@@ -59,6 +61,12 @@
 
 #inputtextdropdown {
     height: 2.3rem;
+    width: 255px;
+    border-right: #82abdf solid 7px;
+}
+#inputtextdropdown:hover {
+    border-right: #1f7ef2 solid 7px;
+
 }
 
 #reportcard{

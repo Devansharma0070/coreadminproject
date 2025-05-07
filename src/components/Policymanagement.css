@@ -1,20 +1,19 @@
-#cardcontainerpolicy{
-
+#cardcontainerpolicy {
     position: absolute;
     width: 1370px;
-    height: 800px;
+    min-height: 1250px; /* Use min-height instead of height */
     left: 350px;
     top: 150px;
 }
 
-#cardpolicy{
-    
-   
+#cardpolicy {
     width: 1270px;
-    height: 750px;
-    
+    min-height: 1200px; /* Use min-height instead of height */
+    padding: 20px; /* Optional: Add padding for better spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
-#expensetypepanel{
+
+#expensetypepanel {
 
     position: absolute;
     width: 360px;
@@ -22,39 +21,41 @@
 
 }
 
-#btn{
-
+#btn {
+border-radius:4px;
     color: rgb(242, 245, 245);
-    background-color: rgb(12, 175, 250);
+    background-color:  rgb(8, 147, 240);
 }
-#btn1{
-    color: rgb(10, 134, 206);
-    border-radius: 1000;
+#btn1 {
+    color: rgb(8, 147, 240);
+    
     position: absolute;
     top: 76px;
     left: 290px;
 }
 
-
-
-#pricebtn{
+#pricebtn {
 
     padding: 0px;
     width: 240px;
     height: 40px;
- color: rgb(58, 56, 56);
-    border: 1.5px solid hsl(0, 12%, 84%); 
-    border-radius: 2px; 
+    color: rgb(58, 56, 56);
+    border: 1.5px solid hsl(0, 12%, 84%);
+    border-radius: 10px;
     border-right: 7px solid #a2c6dd;
-    font-family: Arial, sans-serif; 
-    font-size: 16px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     background-color: #f8f8f8;
     cursor: pointer;
     margin-top: 10px;
     margin-left: 20px;
-        
+
+}
+#pricebtn:hover {
+ 
+    border-right-color: #007bff; 
 
 }

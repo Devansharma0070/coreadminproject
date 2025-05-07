@@ -29,19 +29,27 @@ export default function Login() {
     generateCaptcha();
   }, []);
 
-  const handleLogin = () => {
-    const validUsername = "Devansh";
-    const validPassword = "password123";
+  const handleLogin = async () => {
+    const hardcodedUsername = "Devansh"; 
+    const hardcodedPassword = "password123"; 
 
-    if (userName === validUsername && val === validPassword) {
-      if (captchaValue === captchaChallenge) {
-        navigate('/welcome');
-      } else {
+    try {
+      
+      if (captchaValue !== captchaChallenge) {
         setCaptchaError('Incorrect CAPTCHA, please try again.');
+        return;
       }
-    } else {
-      setCaptchaError('Invalid username or password.');
-      alert('Invalid username or password. Please try again.');
+
+     
+      if (userName === hardcodedUsername && val === hardcodedPassword) {
+        navigate('/welcome'); 
+      } else {
+        setCaptchaError('Invalid username or password.');
+        alert('Invalid username or password. Please try again.');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      setCaptchaError('An error occurred while logging in. Please try again later.');
     }
   };
 

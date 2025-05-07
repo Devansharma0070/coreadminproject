@@ -106,7 +106,7 @@ export default function CustomersDemo() {
 
     return (
         <div className="card">
-             <BreadCrumb style={{position:"absolute",top:80,left:320,width:"100%"}} model={items} home={home} />
+             <BreadCrumb style={{position:"absolute",top:80,left:350,width:"100%"}} model={items} home={home} />
             <Layout></Layout>
 
 

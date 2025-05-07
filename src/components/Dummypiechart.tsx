@@ -42,7 +42,7 @@ export default function PieChartDemo() {
 
     return (
         <div className="card flex justify-content-center">
-            <Chart style={{width:300}} type="pie" data={chartData} options={chartOptions} className="w-full md:w-30rem" />
+            <Chart style={{width:300,marginTop:"-76px"}} type="pie" data={chartData} options={chartOptions} className="w-full md:w-30rem" />
         </div>
     )
 }

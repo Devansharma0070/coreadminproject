@@ -12,8 +12,8 @@ import { Dialog } from 'primereact/dialog';
 import { Panel } from 'primereact/panel';
 import { InputText } from 'primereact/inputtext';
 import Dummychart from './Dummychart';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
-
+import { useNavigate } from 'react-router-dom'; 
+import { Tooltip } from 'primereact/tooltip'; 
 
 class TransactionList {
   number: string | undefined;
@@ -27,7 +27,7 @@ class CardDetails {
 }
 
 function Welcome() {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const [visible, setVisible] = useState(false);
   const [visibleTransactionFilter, setVisibleTransactionFilter] = useState(false);
@@ -248,9 +248,15 @@ function Welcome() {
           </div>
         </Card>
         <Card id='card9'>
+          <Tooltip target="#btnimg1" content="Go to Business Profile" />
+          <Tooltip target="#btnimg2" content="Navigate to External Transfer" />
+          <Tooltip target="#btnimg3" content="Access B2B Services" />
+          <Tooltip target="#btnimg4" content="View Transfer Details" />
+          <Tooltip target="#btnimg5" content="View Business Statements" />
+
           <button
             id='btnimg1'
-            title='Business Profile'
+        
             style={{
               borderRadius: 100,
               padding: 10,
@@ -263,22 +269,22 @@ function Welcome() {
           </button>
           <button
             id='btnimg2'
-            title='External Transfer'
+       
             style={{
               borderRadius: 100,
               padding: 10,
               border: "none",
               outline: "none",
               boxShadow: "-moz-initial",
-              cursor: 'pointer' // Add cursor pointer for better UX
+              cursor: 'pointer'
             }}
-            onClick={() => navigate('/external-transfer')} // Navigation added here
+            onClick={() => navigate('/external-transfer')}
           >
             <img id='img1' width={25} src='src/Images/Exchange.png' alt="Exchange" />
           </button>
           <button
             id='btnimg3'
-            title='B2B'
+      
             style={{
               borderRadius: 100,
               padding: 10,
@@ -292,7 +298,7 @@ function Welcome() {
           </button>
           <button
             id='btnimg4'
-            title='View Transfer'
+     
             style={{
               borderRadius: 100,
               padding: 10,
@@ -306,7 +312,7 @@ function Welcome() {
           </button>
           <button
             id='btnimg5'
-            title='Business Statements'
+    
             style={{
               borderRadius: 100,
               padding: 10,
@@ -339,5 +345,4 @@ function Welcome() {
     </>
   );
 }
-
 export default Welcome;

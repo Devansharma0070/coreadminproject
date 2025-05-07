@@ -12,7 +12,7 @@ export default function Activity() {
   return (
  
     <div>
-        <BreadCrumb style={{position:"absolute",top:117,left:359}} id="Breadcrumb" model={items} home={home} /> 
+        <BreadCrumb style={{position:"absolute",top:102,left:359}} id="Breadcrumb" model={items} home={home} /> 
    <Layout></Layout>
 <Card id="Activitycardcontainer">
   <Card id="Activitycard">
@@ -28,7 +28,6 @@ export default function Activity() {
 
   </Card>
 </Card>
-  
 
     </div>
   )

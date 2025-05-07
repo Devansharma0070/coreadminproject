@@ -4,7 +4,7 @@ import { Card } from "primereact/card";
 import { TabPanel, TabView } from "primereact/tabview";
 import { InputNumber } from "primereact/inputnumber";
 import { Dropdown } from "primereact/dropdown";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { BreadCrumb } from 'primereact/breadcrumb';
 import { Calendar } from "primereact/calendar";
 import { DataTable } from 'primereact/datatable';
@@ -13,8 +13,9 @@ import { Button } from 'primereact/button';
 import { MenuItem } from "primereact/menuitem";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import DummyReportusermanagement from "./Dummyreportusermanagement";
+import { Toast } from 'primereact/toast';
 
- //we need to define the datatypes 
+//we need to define the datatypes 
 interface Product {
   BankName: string;
   Accountowner: string;
@@ -123,14 +124,16 @@ const status=[
     }, 500);
   }, []);
 
+  const toast = useRef<Toast>(null); // Create a Toast reference
+
  //conditions for the sumbit button all the feilds should be filled
   const handleSubmit = () => {
     if (!selectedProducts.length) {
-      alert("Please select at least one product.");
+      toast.current?.show({ severity: 'error', summary: 'Error', detail: 'Please select at least one product.', life: 3000 });
       return;
     }
     if (!selectedMonth || !selectedDay || !transferAmount) {
-      alert("Please select Frequency, Day and enter Amount.");
+      toast.current?.show({ severity: 'error', summary: 'Error', detail: 'Please select Frequency, Day and enter Amount.', life: 3000 });
       return;
     }
 
@@ -150,11 +153,13 @@ const status=[
     }));
 
     setTransferRecords(newTransferRecords);
+    toast.current?.show({ severity: 'success', summary: 'Success', detail: 'Transfer records submitted successfully.', life: 3000 });
   };
   
 
     const deleteProduct = (accountNumber: string) => {
         setTransferRecords(transferRecords.filter(product => product.Accountnumber !== accountNumber));
+        toast.current?.show({ severity: 'info', summary: 'Deleted', detail: 'Record deleted successfully.', life: 3000 });
     };
     const actionBodyTemplate = (rowData: TransferRecord) => {
         return (
@@ -171,6 +176,7 @@ const status=[
 
   return (
     <div>
+      <Toast ref={toast} /> {/* Add Toast component */}
        <BreadCrumb style={{ position: "absolute", top: 80, left: 350, width: "100%" }} model={items} home={home} />
               <Layout />
       <Layout />
@@ -365,7 +371,7 @@ const status=[
             
             </Accordion>
           </TabPanel>
-          <TabPanel header="ViewTransfer">
+          <TabPanel style={{position:"sticky"}} header="ViewTransfer">
             <Card>
               <div style={{
                 display: "grid",

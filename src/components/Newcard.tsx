@@ -66,7 +66,7 @@ export default function Newcard() {
             <TabPanel header={<span style={{ color: 'black' }}>Personalized</span>}>
               <Accordion activeIndex={0}>
                 <AccordionTab
-                  style={{ textAlign: "left", fontSize: "large", tableLayout: "fixed" }}
+                  style={{ textAlign: "left", fontSize: "large", tableLayout: "fixed",position:"sticky" }}
                   header="Personalized"
                 >
                   <div style={{ display: "flex", flexDirection: "column" }}>
@@ -74,7 +74,7 @@ export default function Newcard() {
                     <p>Middle Name:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Name on Card:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Address:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                    <p>State:</p><Dropdown style={{ marginLeft: 208, marginTop: -45 }} value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={states} optionLabel="name"
+                    <p>State:</p><Dropdown style={{ marginLeft: 208, marginTop: -45,width:250 }} value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={states} optionLabel="name"
                       placeholder="Select a State" id="inputtext" />
                     <p>country:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Name on Card:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
@@ -82,7 +82,7 @@ export default function Newcard() {
                     <p>Work phone no:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Mobile no:</p><br></br><InputText id="it1" style={{ marginLeft: 208, marginTop: -70 }}></InputText>
                     <b> <p>Shipping Details:</p></b>
-                    <p>Shipping Address:</p><Dropdown style={{ marginLeft: 208, marginTop: -50 }} value={address} onChange={(e) => setaddress(e.value)} options={add} optionLabel="name"
+                    <p>Shipping Address:</p><Dropdown style={{ marginLeft: 208, marginTop: -50,width:250 }} value={address} onChange={(e) => setaddress(e.value)} options={add} optionLabel="name"
                       placeholder="Select a address" id="inputtext" />
                     <p>Middle Name:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Shipping Address Line 1:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>

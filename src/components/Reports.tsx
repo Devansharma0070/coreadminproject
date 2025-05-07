@@ -137,7 +137,7 @@ export default function Reports() {
     return (
         <div id="Tabview2">
             <Toast ref={toast} />
-            <BreadCrumb style={{ position: "absolute", top: -55, left: 1, width: "100%" }} model={items} home={home} />
+            <BreadCrumb style={{ position: "absolute", top: -55, left: 1, width: "108%" }} model={items} home={home} />
             <Layout />
             <Card id="cardcontainer">
                 <TabView style={{ marginTop: -43 }} activeIndex={activeIndex} onTabChange={handleTabChange}>

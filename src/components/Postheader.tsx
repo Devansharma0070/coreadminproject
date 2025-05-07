@@ -6,7 +6,6 @@ import { Badge } from 'primereact/badge';
 const Header: React.FC = () => {
   const navigate = useNavigate();
   const [lastLogin, setLastLogin] = useState<string | null>(null);
-  localStorage.setItem('lastLogin', new Date().toLocaleString());
 
   useEffect(() => {
     const savedLoginDate = localStorage.getItem('lastLogin');
@@ -14,6 +13,7 @@ const Header: React.FC = () => {
   }, []);
 
   const logout = () => {
+    localStorage.setItem('lastLogin', new Date().toLocaleString());
     navigate('/');
   };
 

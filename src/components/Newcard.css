@@ -53,6 +53,19 @@
     bottom: 4.06rem;
   }
   
+  #sumbitbtn:hover, #Loadbtn:hover {
+    animation: bounce 0.5s ease-in-out;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
   #titlelhs,
   #titlelhs1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -92,12 +105,15 @@
     box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
+
+  #it1:hover {
+    border-right: 0.4375rem solid rgb(34, 100, 155); 
+  }
   
   #inputtext {
     padding: 0;
-    width: 15rem;              /* 240px */
-    height: 2.5rem;            /* 40px */
-    color: #3a3838;
+    width: 15rem;              
+    height: 2.5rem;            
     border: 0.0938rem solid hsl(0, 12%, 84%);
     border-radius: 0.3125rem;
     border-right: 0.4375rem solid #a2c6dd;
@@ -126,4 +142,3 @@
       width: 100%;
     }
   }
-    
