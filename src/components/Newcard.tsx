@@ -11,6 +11,7 @@ import { Button } from "primereact/button";
 import { InputOtp } from 'primereact/inputotp';
 import { Card } from "primereact/card";
 import { Toast } from "primereact/toast";
+import { Instantdummydata } from "./Instantdummydata";
 
 export default function Newcard() {
   const items: MenuItem[] = [{ label: 'New Card' }];
@@ -20,6 +21,7 @@ export default function Newcard() {
   const [selectedCity, setSelectedCity] = useState(null);
   const [address, setaddress] = useState(null);
   const toast = useRef<Toast>(null);
+  const [showInstantData, setShowInstantData] = useState(false);
 
   const handleSubmit = () => {
     toast.current?.show({
@@ -35,6 +37,10 @@ export default function Newcard() {
       summary: "Info",
       detail: "Loading cards is currently disabled.",
     });
+  };
+
+  const handleSearchClick = () => {
+    setShowInstantData(true);
   };
 
   const states = [
@@ -66,7 +72,7 @@ export default function Newcard() {
             <TabPanel header={<span style={{ color: 'black' }}>Personalized</span>}>
               <Accordion activeIndex={0}>
                 <AccordionTab
-                  style={{ textAlign: "left", fontSize: "large", tableLayout: "fixed",position:"sticky" }}
+                  style={{ textAlign: "left", fontSize: "large", tableLayout: "fixed", position: "sticky" }}
                   header="Personalized"
                 >
                   <div style={{ display: "flex", flexDirection: "column" }}>
@@ -74,7 +80,7 @@ export default function Newcard() {
                     <p>Middle Name:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Name on Card:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Address:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                    <p>State:</p><Dropdown style={{ marginLeft: 208, marginTop: -45,width:250 }} value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={states} optionLabel="name"
+                    <p>State:</p><Dropdown style={{ marginLeft: 208, marginTop: -45, width: 250 }} value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={states} optionLabel="name"
                       placeholder="Select a State" id="inputtext" />
                     <p>country:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Name on Card:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
@@ -82,13 +88,14 @@ export default function Newcard() {
                     <p>Work phone no:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Mobile no:</p><br></br><InputText id="it1" style={{ marginLeft: 208, marginTop: -70 }}></InputText>
                     <b> <p>Shipping Details:</p></b>
-                    <p>Shipping Address:</p><Dropdown style={{ marginLeft: 208, marginTop: -50,width:250 }} value={address} onChange={(e) => setaddress(e.value)} options={add} optionLabel="name"
+                    <p>Shipping Address:</p><Dropdown style={{ marginLeft: 208, marginTop: -50, width: 250 }} value={address} onChange={(e) => setaddress(e.value)} options={add} optionLabel="name"
                       placeholder="Select a address" id="inputtext" />
                     <p>Middle Name:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Shipping Address Line 1:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>City:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                     <p>Zipcode:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                   </div>
+
 
                   <div style={{ display: "flex", flexDirection: "column", marginLeft: 500, marginTop: -940 }} >
                     <p>First Name:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
@@ -127,19 +134,34 @@ export default function Newcard() {
                   style={{ textAlign: "left", color: "black", fontSize: "large" }}
                   header="Instant"
                 >
-                  <div style={{ display: "flex", flexDirection: "column" }} >
-                    <p>Full Name:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                    <p>Bulk Ship Address 1:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                    <p>Country:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                    <p>Quantity:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                  </div>
+                  {!showInstantData && (
+                    <>
+                      <div style={{ display: "flex", flexDirection: "column" }} >
+                        <p>Full Name:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
+                        <p>Bulk Ship Address 1:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
+                        <p>Country:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
+                        <p>Quantity:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
+                      </div>
 
-                  <div style={{ display: "flex", flexDirection: "column", marginLeft: 500, marginTop: -235, }}>
-                    <p>Company Name:</p> <InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                    <p>Bulk Ship Address 2</p>  <InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                    <p>State:</p> <InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                    <p>Zip Code:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
-                  </div>
+                      <div style={{ display: "flex", flexDirection: "column", marginLeft: 500, marginTop: -235, }}>
+                        <p>Company Name:</p> <InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
+                        <p>Bulk Ship Address 2</p>  <InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
+                        <p>State:</p> <InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
+                        <p>Zip Code:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginTop: 20 }}>
+                        <br></br>
+  <Button style={{ marginLeft:693,position:"unset"}} id="sumbitbtn" label="Create" />
+  <Button style={{marginLeft:7,position:"unset"}} id="sumbitbtn" label="Search" onClick={handleSearchClick} />
+</div>
+
+                    </>
+                  )}
+                  {showInstantData && (
+                    <div>
+                      <Instantdummydata />
+                    </div>
+                  )}
                 </AccordionTab>
               </Accordion>
             </TabPanel>

@@ -30,9 +30,18 @@ const Header: React.FC = () => {
                 border: "none",
                 outline: "none",
                 boxShadow: "none",
+                transition: "all 0.3s ease",
               }} 
               id="logoutButton" 
               onClick={logout}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = "0px 4px 8px rgba(241, 3, 3, 0.2)";
+                e.currentTarget.style.transform = "translateY(-2px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = "none";
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
             >
               LOGOUT
             </button>

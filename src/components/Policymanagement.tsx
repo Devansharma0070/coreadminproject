@@ -19,9 +19,9 @@ import { Divider } from "primereact/divider";
 
 export default function Policymanagement() {
   const [visible, setVisible] = useState(false); 
-  const [tagsPanel1, setTagsPanel1] = useState([]); // State for first panel
-  const [tagsPanel2, setTagsPanel2] = useState([]); // State for second panel
-  const [tagsPanel3, setTagsPanel3] = useState([]); // State for third panel
+  const [tagsPanel1, setTagsPanel1] = useState<string[]>([]); 
+  const [tagsPanel2, setTagsPanel2] = useState<string[]>([]); 
+  const [tagsPanel3, setTagsPanel3] = useState<string[]>([]);
   const [newTag, setNewTag] = useState("");
   const [first, setFirst] = useState(0);
   const [rows, setRows] = useState(10);
@@ -30,7 +30,7 @@ export default function Policymanagement() {
   const options1: string[] = ['No', 'Yes'];
   const [value1, setValue1] = useState<string>(options1[1]);
   const options2: string[] = ['No', 'Yes'];
-  const [value2, setValue2] = useState<string>(options[0]);
+const [value2, setValue2] = useState<string>(options[0]);
   const options3: string[] = ['No', 'Yes'];
   const [value3, setValue3] = useState<string>(options[0]);
   const options4: string[] = ['No', 'Yes'];
@@ -38,7 +38,7 @@ export default function Policymanagement() {
   const items: MenuItem[] = [{ label: 'Policy Management' }];
   const home: MenuItem = { icon: 'pi pi-receipt' }
   const toast = useRef<Toast>(null);
-  const [activePanel, setActivePanel] = useState<number | null>(null); // To track which panel is active for adding tags
+  const [activePanel, setActivePanel] = useState<number | null>(null); 
   const [deleteIndex, setDeleteIndex] = useState<number | null>(null);
   const [deletePanel, setDeletePanel] = useState<number | null>(null);
 
@@ -130,6 +130,19 @@ export default function Policymanagement() {
       <BreadCrumb style={{position:"absolute",top:95,left:350,width:"100%"}} model={items} home={home} />
       <Layout />
       <Card id="cardcontainerpolicy">
+        <Card id="cardpolicy">
+          <Accordion activeIndex={null}>
+            <AccordionTab
+              header={<span style={{ color: 'black' }}>Dynamic Panel</span>}
+              style={{ overflow: 'hidden' }} // Ensure no overflow issues
+            >
+              <div style={{ padding: '10px' }}>
+                <p>This is a dynamically expanding panel.</p>
+                <p>Content inside the panel will adjust the card height.</p>
+              </div>
+            </AccordionTab>
+          </Accordion>
+        </Card>
         <Card id="cardpolicy">
           <TabView style={{position:"absolute",top:2}}>
         
@@ -232,7 +245,7 @@ export default function Policymanagement() {
   </div>
 
   </div>
-                    <Paginator first={first} rows={rows} totalRecords={120} onPageChange={onPageChange} />
+                  
                 </AccordionTab>
             </Accordion>
             <Accordion activeIndex={null}>
@@ -281,8 +294,8 @@ export default function Policymanagement() {
             </Accordion>
             </TabPanel>
 
-
-            <TabPanel  header={<span style={{ color: 'black' }}>Expense Categories</span>}>
+             
+            <TabPanel  header={<span style={{ color: 'black',position:"sticky"}}>Expense Categories</span>}>
               <Panel style={{ position: "absolute", top: 100, marginLeft: -30 }} id="expensetypepanel" header="Expense Type" toggleable>
                 <Panel header="Tag">
                   {tagsPanel1.map((tag, index) => (

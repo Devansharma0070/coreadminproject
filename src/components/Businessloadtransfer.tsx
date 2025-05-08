@@ -306,6 +306,7 @@ const status=[
   <div style={{ display: "flex", alignItems: "center" }}>
     <p>Account Balance:</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>$405.00</b>
     
+    
   </div>
   <div style={{ display: "flex", alignItems: "center" }}>
     <p>Account Number:</p>&nbsp;&nbsp;&nbsp;&nbsp;<b>234352525365</b>

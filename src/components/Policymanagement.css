@@ -1,14 +1,14 @@
 #cardcontainerpolicy {
     position: absolute;
     width: 1370px;
-    min-height: 1250px; /* Use min-height instead of height */
+    min-height: 1290px; /* Use min-height instead of height */
     left: 350px;
     top: 150px;
 }
 
 #cardpolicy {
     width: 1270px;
-    min-height: 1200px; /* Use min-height instead of height */
+    min-height: 1280px; /* Use min-height instead of height */
     padding: 20px; /* Optional: Add padding for better spacing */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
@@ -59,3 +59,4 @@ border-radius:4px;
     border-right-color: #007bff; 
 
 }
+

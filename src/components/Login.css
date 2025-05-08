@@ -7,8 +7,10 @@
   opacity: 1.25;
   transition: box-shadow 0.3s;
 }
-
-
+#logo:hover {
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+  
+}
 
 #lblLogin {
   font-weight: 500; 
@@ -61,12 +63,12 @@
 #username {
   margin-top: 20px;
   width: 287px; 
-  border-right: 0.4375rem solid #648da7;
+  border-right: 0.5375rem solid #648da7;
   border-radius: 0.5125rem;
 }
 #username:hover {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
-  border-right: 0.4375rem solid rgb(10, 62, 97); 
+  border-right: 0.5375rem solid rgb(10, 62, 97); 
   transform: scale(1.05);
 }
 
@@ -75,12 +77,12 @@
   top: -50px; 
   width: auto;
   height: auto; 
-  border-right: 0.4375rem solid #648da7;
+  border-right: 0.5375rem solid #648da7;
   border-radius: 0.5125rem;
 }
 #password:hover {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
-  border-right: 0.4375rem solid rgb(10, 62, 97); 
+  border-right: 0.5375rem solid rgb(10, 62, 97); 
   transform: scale(1.05);
 }
 
@@ -100,13 +102,13 @@
   top: -100px;
   width: 287px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-right: 0.4375rem solid #648da7;
+  border-right: 0.5375rem solid #648da7;
   border-radius: 0.5125rem;
 }
 #cap:hover {
   transform: scale(1.05);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
-  border-right: 0.4375rem solid rgb(10, 62, 97);  
+  border-right: 0.5375rem solid rgb(10, 62, 97);  
 }
 
 #capbox {
@@ -130,7 +132,7 @@
 #refreshbutton {
   position: absolute;
   top: 445px;
-  left: 103%; 
+  left: 103.5%; 
   transform: translateX(-50%); 
   padding: 10px 20px;
   border: none;

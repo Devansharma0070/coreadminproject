@@ -3,16 +3,14 @@ import { Card } from "primereact/card";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Sidebar.css"
-        
 
-        
 export default function Sidebar() {
   const navigate = useNavigate();
   const [activeButton, setActiveButton] = useState<string | null>(null);
 
   const handleButtonClick = (buttonId: string, route: string) => {
-    setActiveButton(buttonId);
-    navigate(route);           
+    setActiveButton(buttonId); 
+    navigate(route); 
   };
 
   const getButtonColor = (buttonId: string) => {
@@ -21,18 +19,16 @@ export default function Sidebar() {
 
   return (
     <div>
-   
-  <Card style={{ boxShadow: '0 8px 16px rgba(136, 155, 170, 0.2)' }} id="Sidebar">
-
+      <Card style={{ boxShadow: '0 8px 16px rgba(136, 155, 170, 0.2)' }} id="Sidebar">
         <Button
-          onClick={() => handleButtonClick("button1","/welcome")}
+          onClick={() => handleButtonClick("button1", "/welcome")}
           style={{
             backgroundColor: getButtonColor("button1"),
             width: "100%",
             textAlign: "left",
             color: "black",
             marginBottom: "10px",
-             borderRadius:"7PX"
+            borderRadius: "7px",
           }}
         >
           <i className="pi pi-home" style={{ color: "black", fontSize: "1rem" }}></i>{" "}
@@ -40,14 +36,14 @@ export default function Sidebar() {
         </Button>
 
         <Button
-          onClick={() => handleButtonClick("button2", "/Newcard")}
+    onClick={() => handleButtonClick("button2", "/Newcard")}
           style={{
             backgroundColor: getButtonColor("button2"),
             width: "100%",
             textAlign: "left",
             color: "black",
             marginBottom: "10px",
-             borderRadius:"7PX"
+            borderRadius: "7px",
           }}
         >
           <i className="pi pi-credit-card" style={{ color: "black", fontSize: "1rem" }}></i>
@@ -62,7 +58,7 @@ export default function Sidebar() {
             textAlign: "left",
             color: "black",
             marginBottom: "10px",
-             borderRadius:"7PX"
+            borderRadius: "7px",
           }}
         >
           <i className="pi pi-wallet" style={{ color: "black", fontSize: "1rem" }}></i>
@@ -77,7 +73,7 @@ export default function Sidebar() {
             textAlign: "left",
             color: "black",
             marginBottom: "10px",
-            borderRadius:"7PX"
+            borderRadius: "7px",
           }}
         >
           <i className="pi pi-warehouse" style={{ color: "black", fontSize: "1rem" }}></i>
@@ -92,7 +88,7 @@ export default function Sidebar() {
             textAlign: "left",
             color: "black",
             marginBottom: "10px",
-             borderRadius:"7PX"
+            borderRadius: "7px",
           }}
         >
           <i className="pi pi-file-export" style={{ color: "black", fontSize: "1rem" }}></i>
@@ -107,7 +103,7 @@ export default function Sidebar() {
             textAlign: "left",
             color: "black",
             marginBottom: "10px",
-             borderRadius:"7PX"
+            borderRadius: "7px",
           }}
         >
           <i className="pi pi-receipt" style={{ color: "black", fontSize: "1rem" }}></i>
@@ -122,7 +118,7 @@ export default function Sidebar() {
             textAlign: "left",
             color: "black",
             marginBottom: "10px",
-             borderRadius:"7PX"
+            borderRadius: "7px",
           }}
         >
           <i className="pi pi-file" style={{ color: "black", fontSize: "1rem" }}></i>
@@ -137,41 +133,12 @@ export default function Sidebar() {
             textAlign: "left",
             color: "black",
             marginBottom: "10px",
-             borderRadius:"7PX"
+            borderRadius: "7px",
           }}
         >
           <i className="pi pi-users" style={{ color: "black", fontSize: "1rem" }}></i>
           <span style={{ marginLeft: "8px" }}>Administration</span>
         </Button>
-        <Button
-          onClick={() => handleButtonClick("button9", "/Administration1")}
-          style={{
-            backgroundColor: getButtonColor("button9"),
-            width: "100%",
-            textAlign: "left",
-            color: "black",
-            marginBottom: "10px",
-             borderRadius:"7PX"
-          }}
-        >
-          <i className="pi pi-users" style={{ color: "black", fontSize: "1rem" }}></i>
-          <span style={{ marginLeft: "8px" }}>Administration1</span>
-        </Button>
-        <Button
-          onClick={() => handleButtonClick("button10", "/Svndetails")}
-          style={{
-            backgroundColor: getButtonColor("button9"),
-            width: "100%",
-            textAlign: "left",
-            color: "black",
-            marginBottom: "10px",
-             borderRadius:"7PX"
-          }}
-        >
-          <i className="pi pi-users" style={{ color: "black", fontSize: "1rem" }}></i>
-          <span style={{ marginLeft: "8px" }}>Svn Details</span>
-        </Button>
-        
       </Card>
     </div>
   );

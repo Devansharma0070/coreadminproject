@@ -150,8 +150,8 @@ function Welcome() {
       <div className='bodyhome'>
         <BreadCrumb style={{ position: "absolute", top: 80, left: 320, width: "100%" }} model={items} home={home} />
         <Layout />
-        <div id='chart'>
-          <Dummychart />
+        <div  id='chart'>
+          <Dummychart  />
         </div>
         <br />
         <br />

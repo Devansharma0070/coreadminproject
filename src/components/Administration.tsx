@@ -253,9 +253,9 @@ export default function Administration() {
                 </AccordionTab>
               </Accordion>
             </TabPanel>
-            <TabPanel header={<span style={{ color: 'black' }}>User Management</span>}>
+            <TabPanel header={<span style={{ color: 'black',position:"sticky" }}>User Management</span>}>
               <Accordion>
-                <AccordionTab style={{ textAlign: "left" }} header="User Management">
+                <AccordionTab style={{ textAlign: "left",position:"sticky" }} header="User Management">
                   <div style={{
                     display: "grid",
                     gridTemplateColumns: "1fr 1fr",
@@ -288,9 +288,9 @@ export default function Administration() {
                 </AccordionTab>
               </Accordion>
             </TabPanel>
-            <TabPanel header={<span style={{ color: 'black' }}>Update Profile</span>}>
+            <TabPanel header={<span style={{ color: 'black',position:"sticky" }}>Update Profile</span>}>
               <Accordion>
-                <AccordionTab style={{ textAlign: "left" }} header="Change Password">
+                <AccordionTab style={{ textAlign: "left",position:"sticky" }} header="Change Password">
                   <div style={{
                     display: "grid",
                     gridTemplateColumns: "1fr 1fr",
