@@ -40,8 +40,7 @@ export default function CustomersDemo() {
             availableBalance: 2500
         },
         {
-            id: 3,
-            accountNo: 'AC12347',
+            id: 3,accountNo: 'AC12347',
             firstName: 'Rahul',
             lastName: 'Shukla',
             cardNo: '2646****3966',
@@ -70,7 +69,84 @@ export default function CustomersDemo() {
             lastName: 'Khare',
             cardNo: '1001****1232',
             availableBalance: 1500
+        },
+        {
+            id: 7,
+            accountNo: 'AC12350',
+            firstName: 'Siddharth',
+            lastName: 'Verma',
+            cardNo: '4567****8901',
+            availableBalance: 2000
+        },
+        {
+            id: 8,
+            accountNo: 'AC12351',
+            firstName: 'Nikhil',
+            lastName: 'Gupta',
+            cardNo: '7890****2345',
+            availableBalance: 3000
+        },
+        {
+            id: 9,
+            accountNo: 'AC12352',
+            firstName: 'Karan',
+            lastName: 'Mehta',
+            cardNo: '1234****5678',
+            availableBalance: 4000
+        },
+        {
+            id: 10,
+            accountNo: 'AC12353',
+            firstName: 'Rohit',
+            lastName: 'Bansal',
+            cardNo: '5678****9012',
+            availableBalance: 6000
+        },
+        {
+            id: 11,
+            accountNo: 'AC12354',
+            firstName: 'Vikram',
+            lastName: 'Choudhary',
+            cardNo: '9012****3456',
+            availableBalance: 7000
+        },
+        {
+            id: 12,
+            accountNo: 'AC12355',
+            firstName: 'Saurabh',
+            lastName: 'Yadav',
+            cardNo: '3456****7890',
+            availableBalance: 8000
+        },
+        {
+            id: 13,
+            accountNo: 'AC12356',
+            firstName: 'Ankit',
+            lastName: 'Jain',
+            cardNo: '7890****1234',
+            availableBalance: 9000
+        },
+        {
+            id: 14,
+            accountNo: 'AC12357',
+            firstName: 'Pankaj',
+            lastName: 'Kumar',
+            cardNo: '2345****6789',
+            availableBalance: 11000
+        },
+        {
+            id: 15,
+            accountNo: 'AC12358',
+            firstName: 'Ravi',
+            lastName: 'Shukla',
+            cardNo: '6789****0123',
+            availableBalance: 12000
         }
+
+
+
+
+
     ]);
     const items: MenuItem[] = [{ label: 'Card Unload' }];
     const home: MenuItem = { icon: 'pi pi-wallet' }
@@ -123,7 +199,7 @@ export default function CustomersDemo() {
                     header={renderHeader()} 
                     rows={10}
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
-                    rowsPerPageOptions={[10, 25, 50]} 
+                    rowsPerPageOptions={[5, 10, 20]} 
                     dataKey="id" 
                     selectionMode="checkbox" 
                     selection={selectedCustomers} 

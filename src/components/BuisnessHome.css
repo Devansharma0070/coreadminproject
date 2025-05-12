@@ -19,7 +19,7 @@
 #card1,
 #card2,
 #card3 {
-  margin-left: -18.75rem; /* -300px */
+  margin-left: -17.75rem; /* -300px */
   width: 28.125rem; /* 450px */
   height: 8.125rem; /* 130px */
 }
@@ -35,18 +35,18 @@
 #card7,
 #card8 {
   position: relative;
-  left: 10rem; /* 160px */
+  left: 11rem; /* 160px */
   width: 21.875rem; /* 350px */
   height: 5.625rem; /* 90px */
 }
 
 #card7 {
-  height: 5.625rem; /* '9ch' changed to match other cards */
+  height: 5.625rem; 
 }
 
 #card9 {
   position: absolute;
-  right: 2.8rem; /* 45px */
+  right: 1.8rem; /* 45px */
   top: 9.375rem; /* 150px */
   width: 25rem; /* 400px */
   height: 5.625rem; /* 90px */
@@ -108,15 +108,15 @@
   height: 3.75rem; /* 60px */
   object-fit: contain;
   object-position: left;
-  margin-top: -2.2rem; /* -35px */
-  margin-left: -76.25rem; /* -1220px */
+  margin-top: -2.2rem; 
+  margin-left: -76.25rem; 
 }
 
 #Sidebar {
   position: fixed;
-  width: 20rem; /* 320px */
-  height: 39rem; /* 625px */
-  margin-top: 5.3rem; /* 85px */
+  width: 20rem; 
+  height: 39rem; 
+  margin-top: 5.3rem; 
   top: 0;
   left: 0;
 }
@@ -125,7 +125,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 3.75rem; /* 60px */
+  height: 3.75rem; 
   width: 100%;
 }
 
@@ -135,23 +135,23 @@
 #btnimg4,
 #btnimg5 {
   position: absolute;
-  top: 0.625rem; /* 10px */
+  top: 0.625rem; 
 }
 
 #btnimg1 {
-  left: 0.625rem; /* 10px */
+  left: 0.625rem; 
 }
 #btnimg2 {
-  left: 5.625rem; /* 90px */
+  left: 5.625rem; 
 }
 #btnimg3 {
-  left: 10.9375rem; /* 175px */
+  left: 10.9375rem; 
 }
 #btnimg4 {
-  left: 15.9375rem; /* 255px */
+  left: 15.9375rem; 
 }
 #btnimg5 {
-  left: 20.9375rem; /* 335px */
+  left: 20.9375rem; 
 }
 
 #btnimg1:hover,
@@ -171,12 +171,13 @@
 #Dropdown {
   position: absolute;
   bottom: 6.94rem; /* 111px */
-  left: 25.625rem; /* 410px */
+  left: 26.625rem; /* 410px */
 }
 
 #filterimg {
   width: 1.5625rem; /* 25px */
   position: relative;
+  border: none;
 }
 
 #btnfilter1 {
@@ -184,12 +185,14 @@
   left: 33.125rem; /* 530px */
   top: -0.0625rem; /* -1px */
   padding: 0.625rem; /* 10px */
+  border: none;
 }
 
 #icon {
   position: absolute;
-  top: 1.875rem; /* 30px */
+  top: .875rem; /* 30px */
   right: 2.8125rem; /* 45px */
+ 
 }
 
 #rhs {
@@ -212,23 +215,28 @@
   position: absolute;
   left: -0.625rem; /* -10px */
   top: 3.625rem; /* 58px */
-  height: 1.875rem; /* 30px */
-  padding: 0; /* -9px is invalid */
+  height: 1.875rem; 
+  padding: 0; 
   color: #000;
 }
 
 #filter3 {
   position: absolute;
-  top: 40.625rem; /* 650px */
-  left: 61.875rem; /* 990px */
-  border-radius: 31.25rem; /* 500px */
+top: 38.5rem;
+left: 55rem;
+ border-radius: 50%;
+  border: none;
+  padding: 0.625rem; 
+ width: 2.7rem; 
+ height: 2.7rem;
 }
 
 #chart {
   position: absolute;
-  left: 81.25rem; 
+  left: 82.25rem; 
   top: 17.5rem; 
-  width: 31.25rem; 
+  width: 30.25rem; 
+
 }
 
 #Breadcrumbhome {

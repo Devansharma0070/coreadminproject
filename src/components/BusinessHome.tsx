@@ -12,8 +12,8 @@ import { Dialog } from 'primereact/dialog';
 import { Panel } from 'primereact/panel';
 import { InputText } from 'primereact/inputtext';
 import Dummychart from './Dummychart';
-import { useNavigate } from 'react-router-dom'; 
-import { Tooltip } from 'primereact/tooltip'; 
+import { useNavigate } from 'react-router-dom';
+import { Tooltip } from 'primereact/tooltip';
 
 class TransactionList {
   number: string | undefined;
@@ -148,10 +148,10 @@ function Welcome() {
   return (
     <>
       <div className='bodyhome'>
-        <BreadCrumb style={{ position: "absolute", top: 80, left: 320, width: "100%" }} model={items} home={home} />
+        <BreadCrumb style={{ position: "absolute", top: 80, left: 333, width: "100%" }} model={items} home={home} />
         <Layout />
-        <div  id='chart'>
-          <Dummychart  />
+        <div id='chart'>
+          <Dummychart />
         </div>
         <br />
         <br />
@@ -191,7 +191,7 @@ function Welcome() {
             </div>
           </Card>
           <br />
-          <Panel id='card4' header="Cards">
+          <Panel  id='card4' header="Cards">
             <Dropdown
               id='Dropdown'
               value={selectedCity}
@@ -229,15 +229,15 @@ function Welcome() {
         <br />
         <Card id='card6'>
           <div id='div6'>
-            <p>Pending Credit Transfer&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>$0.00</b> </p>
-            <p>Last Credit Transfer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>$0.00</b> </p>
+            <p>Pending Credit Transfer<b style={{marginLeft:77}}>$0.00</b></p>
+            <p>Last Credit Transfer<b style={{marginLeft:105}}>$0.00</b></p>
           </div>
         </Card>
         <br />
         <Card id='card7'>
           <div id='div7'>
-            <p>MTD Card Spending &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>$0.00</b></p>
-            <p>YTD Card Spending  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>$0.00</b></p>
+            <p>MTD Card Spending <b style={{marginLeft:99}}>$0.00</b></p>
+            <p>YTD Card Spending  <b style={{marginLeft:102}}>$0.00</b></p>
           </div>
         </Card>
         <br />
@@ -248,15 +248,17 @@ function Welcome() {
           </div>
         </Card>
         <Card id='card9'>
-          <Tooltip target="#btnimg1" content="Go to Business Profile" />
-          <Tooltip target="#btnimg2" content="Navigate to External Transfer" />
-          <Tooltip target="#btnimg3" content="Access B2B Services" />
-          <Tooltip target="#btnimg4" content="View Transfer Details" />
-          <Tooltip target="#btnimg5" content="View Business Statements" />
+          <Tooltip target="#btnimg1" content=" Business Profile" position="top" />
+          <Tooltip target="#btnimg2" content=" External Transfer" position="top" />
+          <Tooltip target="#btnimg3" content="B2B Services" position="top" />
+          <Tooltip target="#btnimg4" content="Transfer Details" position="top" />
+          <Tooltip target="#btnimg5" content="Business Statements" position="top" />
+
+
 
           <button
             id='btnimg1'
-        
+
             style={{
               borderRadius: 100,
               padding: 10,
@@ -269,7 +271,7 @@ function Welcome() {
           </button>
           <button
             id='btnimg2'
-       
+
             style={{
               borderRadius: 100,
               padding: 10,
@@ -284,7 +286,7 @@ function Welcome() {
           </button>
           <button
             id='btnimg3'
-      
+
             style={{
               borderRadius: 100,
               padding: 10,
@@ -298,7 +300,7 @@ function Welcome() {
           </button>
           <button
             id='btnimg4'
-     
+
             style={{
               borderRadius: 100,
               padding: 10,
@@ -312,7 +314,7 @@ function Welcome() {
           </button>
           <button
             id='btnimg5'
-    
+
             style={{
               borderRadius: 100,
               padding: 10,
@@ -334,9 +336,9 @@ function Welcome() {
             <i style={{ fontSize: '1.5rem', color: "#1f7ef2" }} className="pi pi-filter"></i>
           </button>
           <Dialog header="Transaction Filter" visible={visibleTransactionFilter} style={{ width: '50vw' }} onHide={() => setVisibleTransactionFilter(false)} footer={transactionFooterContent}>
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '5px' }}>
               <b><span>Transaction ID</span></b>&nbsp;&nbsp;<InputText value={transactionId} onChange={(e) => setTransactionId(e.target.value)} />&nbsp;&nbsp;&nbsp;
-              <b><span>Transaction Date</span></b>&nbsp;&nbsp;<InputText value={transactionDate} onChange={(e) => setTransactionDate(e.target.value)} />
+              <b><span>Transaction Date</span></b>&nbsp;<InputText value={transactionDate} onChange={(e) => setTransactionDate(e.target.value)} />
             </div>
           </Dialog>
           <DataView id='Dataview2' value={filteredTransactionList || []} listTemplate={listTemplate} paginator rows={10} className="listdata-grid" />

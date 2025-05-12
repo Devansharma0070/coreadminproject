@@ -14,7 +14,7 @@ export default function BasicDemo() {
             datasets: [
                 {
                     label: 'Total Spendings',
-                    data: [540, 725, 500, 620, 400, 800],
+                    data: [340, 725, 500, 620, 480, 1000],
                     backgroundColor: [
                         'rgba(255, 143, 31, 0.2)',
                         'rgba(75, 192, 192, 0.2)',
@@ -27,11 +27,12 @@ export default function BasicDemo() {
                         'rgb(255, 159, 64)',
                         'rgb(75, 192, 192)',
                         'rgb(86, 70, 160)',
-                        'rgb(182, 114, 69)',
+                        'rgba(207, 70, 70, 0.91)',
+                        
                         'rgb(54, 162, 235)',
-                        'rgb(54, 162, 235)'
+                        'rgb(23, 219, 98)'
                     ],
-                    borderWidth: 1.5
+                    borderWidth: 2
                 }
             ]
         };
@@ -80,7 +81,7 @@ export default function BasicDemo() {
 
     return (
         <div className="card">
-            <Chart style={{ marginLeft: -200, width: 450 }} type="bar" data={chartData} options={chartOptions} />
+            <Chart style={{ marginLeft: -200, width: 420 }} type="bar" data={chartData} options={chartOptions} />
             <Button
                 style={{
                     color: "#1f7ef2",

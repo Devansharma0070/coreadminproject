@@ -9,19 +9,26 @@ export default function PieChartDemo() {
     useEffect(() => {
         const documentStyle = getComputedStyle(document.documentElement);
         const data = {
-            labels: ['Devansh', 'Aditya', 'Rohan'],
+            labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June'],
             datasets: [
                 {
-                    data: [540, 325, 702],
+                    data: [340, 725, 500, 620, 480, 1000],
                     backgroundColor: [
                         documentStyle.getPropertyValue('--blue-500'), 
                         documentStyle.getPropertyValue('--yellow-500'), 
-                        documentStyle.getPropertyValue('--green-500')
+                        documentStyle.getPropertyValue('--green-500'),
+                        documentStyle.getPropertyValue('--red-500'), 
+                        documentStyle.getPropertyValue('--orange-500'), 
+                        documentStyle.getPropertyValue('--pink-500')
+                        
                     ],
                     hoverBackgroundColor: [
                         documentStyle.getPropertyValue('--blue-400'), 
                         documentStyle.getPropertyValue('--yellow-400'), 
-                        documentStyle.getPropertyValue('--green-400')
+                        documentStyle.getPropertyValue('--green-400'),
+                        documentStyle.getPropertyValue('--red-500'), 
+                        documentStyle.getPropertyValue('--orange-500'), 
+                        documentStyle.getPropertyValue('--pink-500')
                     ]
                 }
             ]

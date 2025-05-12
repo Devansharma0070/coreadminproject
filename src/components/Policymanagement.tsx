@@ -130,19 +130,7 @@ const [value2, setValue2] = useState<string>(options[0]);
       <BreadCrumb style={{position:"absolute",top:95,left:350,width:"100%"}} model={items} home={home} />
       <Layout />
       <Card id="cardcontainerpolicy">
-        <Card id="cardpolicy">
-          <Accordion activeIndex={null}>
-            <AccordionTab
-              header={<span style={{ color: 'black' }}>Dynamic Panel</span>}
-              style={{ overflow: 'hidden' }} // Ensure no overflow issues
-            >
-              <div style={{ padding: '10px' }}>
-                <p>This is a dynamically expanding panel.</p>
-                <p>Content inside the panel will adjust the card height.</p>
-              </div>
-            </AccordionTab>
-          </Accordion>
-        </Card>
+       
         <Card id="cardpolicy">
           <TabView style={{position:"absolute",top:2}}>
         
@@ -407,7 +395,7 @@ const [value2, setValue2] = useState<string>(options[0]);
             </TabPanel>
                 
 
-            <TabPanel header={<span style={{ color: 'black' }}>Alerts Thresholds</span>}>
+            <TabPanel style={{position:"unset"}} header={<span style={{ color: 'black' }}>Alerts Thresholds</span>}>
               <div
                 style={{
                   display: "grid",

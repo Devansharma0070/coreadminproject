@@ -63,11 +63,7 @@ export default function Reports() {
         setShowReport(true);
         setShowgraph(false);
         setshowpie(false);
-        toast.current?.show({
-            severity: "success",
-            summary: "Success",
-            detail: "Report displayed successfully.",
-        });
+      
     };
 
     const handlegraph = () => {
@@ -82,11 +78,7 @@ export default function Reports() {
         setShowgraph(true);
         setShowReport(false);
         setshowpie(false);
-        toast.current?.show({
-            severity: "success",
-            summary: "Success",
-            detail: "Graph displayed successfully.",
-        });
+    
     };
 
     const handlepie = () => {
@@ -100,12 +92,7 @@ export default function Reports() {
         }
         setshowpie(true);
         setShowReport(false);
-        setShowgraph(false);
-        toast.current?.show({
-            severity: "success",
-            summary: "Success",
-            detail: "Pie chart displayed successfully.",
-        });
+   
     };
 
     const handleTabChange = (e) => {
@@ -126,11 +113,8 @@ export default function Reports() {
             });
             return;
         }
-        toast.current?.show({
-            severity: "success",
-            summary: "Success",
-            detail: "Date range submitted successfully.",
-        });
+       
+      
         hideDialog();
     };
 
@@ -255,7 +239,6 @@ export default function Reports() {
                     <Calendar id="inputtextdropdown" value={date} onChange={(e) => setDate(e.value)} view="month" dateFormat="mm/yy" />
                     <p>To Date</p>
                     <Calendar id="inputtextdropdown" value={date1} onChange={(e) => setDate1(e.value)} view="month" dateFormat="mm/yy" />
-
                     <Button id="sumbitbtn1" label="Submit" onClick={handleDialogSubmit} />
                     <Button id="Closebtn" label="Close" onClick={hideDialog} />
                 </Dialog>

@@ -34,6 +34,7 @@ function App() {
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/activity" element={<Activity />} />
       </Routes>
+
     </div>
   );
 }

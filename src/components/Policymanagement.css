@@ -1,16 +1,17 @@
 #cardcontainerpolicy {
     position: absolute;
     width: 1370px;
-    min-height: 1290px; /* Use min-height instead of height */
+ height: 1250px;
     left: 350px;
     top: 150px;
 }
 
 #cardpolicy {
     width: 1270px;
-    min-height: 1280px; /* Use min-height instead of height */
-    padding: 20px; /* Optional: Add padding for better spacing */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+   height: 1200px;
+   
+  
+    margin-top: -30px;
 }
 
 #expensetypepanel {

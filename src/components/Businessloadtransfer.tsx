@@ -182,7 +182,7 @@ const status=[
       <Layout />
       <Card id="businesscontainer">
         <TabView style={{marginTop:-40}} >
-          <TabPanel header="External Transfer" >
+          <TabPanel style={{position:"unset"}}   header={<span style={{ color: 'black' }}>External Transfer</span>} >
           <div>
             <p style={{textAlign:"left"}}>Account Balance:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>300$</b></p>
             <p style={{textAlign:"left"}}>*Initiate Transfers Between External Bank Account And Business Account</p>
@@ -271,7 +271,7 @@ const status=[
                 <DataTable 
                   value={transferRecords} 
                   paginator 
-                  rows={5} 
+                      rows={5} 
                   rowsPerPageOptions={[5, 10, 20]} 
                   tableStyle={{ minWidth: '100%' }}
                   dataKey="Accountnumber"
@@ -295,9 +295,9 @@ const status=[
               </>
             )}
           </TabPanel>
-          <TabPanel header="B2B">
+          <TabPanel  header={<span style={{ color: 'black' }}>B2B</span>} >
             <Accordion>
-              <AccordionTab style={{textAlign:"left"}} header="Sender Buisness Account">
+              <AccordionTab style={{textAlign:"left"}} header={<span style={{ color: 'black' }}>Senders Business Account</span>}>
              <div style={{
   display: "grid",
   gridTemplateColumns: "1fr 1fr",
@@ -327,7 +327,7 @@ const status=[
 
               </AccordionTab>
 
-              <AccordionTab style={{textAlign:"left"}} header="Recipient Buisness Account">
+              <AccordionTab style={{textAlign:"left"}} header={<span style={{ color: 'black' }}>Recipient Business Account</span>}>
               <div style={{
   display: "grid",
   gridTemplateColumns: "1fr 1fr",
@@ -372,7 +372,7 @@ const status=[
             
             </Accordion>
           </TabPanel>
-          <TabPanel style={{position:"sticky"}} header="ViewTransfer">
+          <TabPanel style={{position:"sticky"}}  header={<span style={{ color: 'black' }}>View Transfer</span>}>
             <Card>
               <div style={{
                 display: "grid",

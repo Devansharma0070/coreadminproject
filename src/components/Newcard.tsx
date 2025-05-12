@@ -73,7 +73,7 @@ export default function Newcard() {
               <Accordion activeIndex={0}>
                 <AccordionTab
                   style={{ textAlign: "left", fontSize: "large", tableLayout: "fixed", position: "sticky" }}
-                  header="Personalized"
+                  header={<span style={{ color: 'black' }}>Personalized</span>}
                 >
                   <div style={{ display: "flex", flexDirection: "column" }}>
                     <p>Title:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
@@ -117,12 +117,9 @@ export default function Newcard() {
                     <p>country:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }}></InputText>
                   </div>
 
-                  <div className="card flex justify-content-center">
-                    <Button id="sumbitbtn" label="Submit" onClick={handleSubmit}></Button>
-                  </div>
-
-                  <div className="card flex justify-content-center">
-                    <Button id="Loadbtn" label="Load Cards" disabled onClick={handleLoadCards} />
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginTop: 60 }}>
+                    <Button style={{ position: "unset", marginLeft: 710 }} id="sumbitbtn" label="Submit" onClick={handleSubmit}></Button>
+                    <Button style={{ position: "unset", borderRadius: "7px", height: "42px", width: "110px" }} id="Loadbtn" label="Load Cards" disabled onClick={handleLoadCards} />
                   </div>
                 </AccordionTab>
               </Accordion>
@@ -132,7 +129,7 @@ export default function Newcard() {
               <Accordion activeIndex={0}>
                 <AccordionTab
                   style={{ textAlign: "left", color: "black", fontSize: "large" }}
-                  header="Instant"
+                  header={<span style={{ color: 'black' }}>Instant</span>}
                 >
                   {!showInstantData && (
                     <>
@@ -151,9 +148,9 @@ export default function Newcard() {
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginTop: 20 }}>
                         <br></br>
-  <Button style={{ marginLeft:693,position:"unset"}} id="sumbitbtn" label="Create" />
-  <Button style={{marginLeft:7,position:"unset"}} id="sumbitbtn" label="Search" onClick={handleSearchClick} />
-</div>
+                        <Button style={{ marginLeft: 693, position: "unset" }} id="sumbitbtn" label="Create" />
+                        <Button style={{ marginLeft: 7, position: "unset" }} id="sumbitbtn" label="Search" onClick={handleSearchClick} />
+                      </div>
 
                     </>
                   )}

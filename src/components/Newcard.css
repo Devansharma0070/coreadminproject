@@ -53,9 +53,7 @@
     bottom: 4.06rem;
   }
   
-  #sumbitbtn:hover, #Loadbtn:hover {
-    animation: bounce 0.5s ease-in-out;
-  }
+  
 
   @keyframes bounce {
     0%, 100% {
@@ -74,31 +72,31 @@
   
   #titlerhs1 {
     position: absolute;
-    bottom: 5.5rem;            /* 88px */
-    right: 21.875rem;          /* 350px */
+    bottom: 5.5rem;            
+    right: 21.875rem;          
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
   }
   
   #inputlhs1 {
     position: absolute;
-    top: 8.125rem;             /* 130px */
-    left: 14.375rem;           /* 230px */
+    top: 8.125rem;             
+    left: 14.375rem;          
   }
   
   #inputrhs1 {
     position: absolute;
-    top: 7.5rem;               /* 120px */
-    left: 53.125rem;           /* 850px */
+    top: 7.5rem;               
+    left: 53.125rem;          
   }
   
   #it1 {
     padding: 0;
-    width: 15.625rem;          /* 250px */
-    height: 2.575rem;          /* 30px */
+    width: 15.625rem;         
+    height: 2.575rem;         
     color: #3a3838;
     border: 0.0938rem solid hsl(0, 12%, 84%);
-    border-radius: 0.3125rem;  /* 5px */
+    border-radius: 0.3125rem;  
     border-right: 0.4375rem solid #a2c6dd;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
@@ -126,19 +124,21 @@
   
   #Breadcrumb {
     position: absolute;
-    top: -3.75rem;             /* -60px */
-    left: -0.1875rem;          /* -3px */
+    top: -3.75rem;
+    left: -0.1875rem;     
     width: 100%;
   }
   @media (max-width: 768px) {
     #Tabview, #Tabview2 {
       width: 95vw;
       left: 2.5vw;
+      
     }
   
     #sumbitbtn, #Loadbtn {
       position: static;
       margin-top: 1rem;
       width: 100%;
+
     }
   }

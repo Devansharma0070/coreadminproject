@@ -31,7 +31,7 @@ export default function Sidebar() {
             borderRadius: "7px",
           }}
         >
-          <i className="pi pi-home" style={{ color: "black", fontSize: "1rem" }}></i>{" "}
+          <i className="pi pi-home" style={{ color: "black", fontSize: "1.3rem" }}></i>{" "}
           <span style={{ marginLeft: "8px" }}>Business Home</span>
         </Button>
 
@@ -46,7 +46,7 @@ export default function Sidebar() {
             borderRadius: "7px",
           }}
         >
-          <i className="pi pi-credit-card" style={{ color: "black", fontSize: "1rem" }}></i>
+          <i className="pi pi-credit-card" style={{ color: "black", fontSize: "1.3rem" }}></i>
           <span style={{ marginLeft: "8px" }}>New Card</span>
         </Button>
 
@@ -61,7 +61,7 @@ export default function Sidebar() {
             borderRadius: "7px",
           }}
         >
-          <i className="pi pi-wallet" style={{ color: "black", fontSize: "1rem" }}></i>
+          <i className="pi pi-wallet" style={{ color: "black", fontSize: "1.3rem" }}></i>
           <span style={{ marginLeft: "8px" }}>Card Unload</span>
         </Button>
 
@@ -76,7 +76,7 @@ export default function Sidebar() {
             borderRadius: "7px",
           }}
         >
-          <i className="pi pi-warehouse" style={{ color: "black", fontSize: "1rem" }}></i>
+          <i className="pi pi-warehouse" style={{ color: "black", fontSize: "1.3rem" }}></i>
           <span style={{ marginLeft: "8px" }}>Business Load Transfer</span>
         </Button>
 
@@ -91,7 +91,7 @@ export default function Sidebar() {
             borderRadius: "7px",
           }}
         >
-          <i className="pi pi-file-export" style={{ color: "black", fontSize: "1rem" }}></i>
+          <i className="pi pi-file-export" style={{ color: "black", fontSize: "1.3rem" }}></i>
           <span style={{ marginLeft: "8px" }}>Activity</span>
         </Button>
 
@@ -106,7 +106,7 @@ export default function Sidebar() {
             borderRadius: "7px",
           }}
         >
-          <i className="pi pi-receipt" style={{ color: "black", fontSize: "1rem" }}></i>
+          <i className="pi pi-receipt" style={{ color: "black", fontSize: "1.3rem" }}></i>
           <span style={{ marginLeft: "8px" }}>Policy Management</span>
         </Button>
 
@@ -121,7 +121,7 @@ export default function Sidebar() {
             borderRadius: "7px",
           }}
         >
-          <i className="pi pi-file" style={{ color: "black", fontSize: "1rem" }}></i>
+          <i className="pi pi-file" style={{ color: "black", fontSize: "1.3rem" }}></i>
           <span style={{ marginLeft: "8px" }}>Reports</span>
         </Button>
 
@@ -136,7 +136,7 @@ export default function Sidebar() {
             borderRadius: "7px",
           }}
         >
-          <i className="pi pi-users" style={{ color: "black", fontSize: "1rem" }}></i>
+          <i className="pi pi-users" style={{ color: "black", fontSize: "1.3rem" }}></i>
           <span style={{ marginLeft: "8px" }}>Administration</span>
         </Button>
       </Card>

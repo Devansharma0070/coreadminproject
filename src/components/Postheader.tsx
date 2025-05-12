@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import { Card } from 'primereact/card';
 import { Badge } from 'primereact/badge';
 
@@ -24,18 +24,23 @@ const Header: React.FC = () => {
         <b>
           <p id='login'>
             Welcome Devansh|
-            <button 
+            <button
               style={{
                 backgroundColor: "white",
                 border: "none",
                 outline: "none",
+                marginRight: "11px",
                 boxShadow: "none",
                 transition: "all 0.3s ease",
-              }} 
-              id="logoutButton" 
+                color: " #1f7ef2",
+                fontFamily: "unset",
+                fontSize: "1rem",
+                fontWeight: "bold",
+              }}
+              id="logoutButton"
               onClick={logout}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = "0px 4px 8px rgba(241, 3, 3, 0.2)";
+                e.currentTarget.style.boxShadow = "0px 4px 8px rgb(92, 146, 177)";
                 e.currentTarget.style.transform = "translateY(-2px)";
               }}
               onMouseLeave={(e) => {
@@ -45,14 +50,15 @@ const Header: React.FC = () => {
             >
               LOGOUT
             </button>
-            <p style={{ fontSize: 'small', position:"absolute", top:20 }}>
+            <p style={{ fontSize: 'small', position: "absolute", top: 20 }}>
               Last login:  {lastLogin}
             </p>
           </p>
         </b>
-        <i id='icon' className="pi pi-bell p-overlay-badge" style={{ fontSize: '2rem' }}>
-          <Badge value="5"></Badge>
-        </i>
+        <div ><i id='icon' className="pi pi-bell p-overlay-badge" style={{ fontSize: '2rem', }}>
+          <Badge style={{ backgroundColor: "red" }} value="5"></Badge>
+        </i></div>
+
       </Card>
     </header>
   );

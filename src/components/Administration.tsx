@@ -61,7 +61,7 @@ export default function Administration() {
   ];
 
   const handleSubmit = () => {
-    // Validate passwords
+ 
     setIsCurrentPasswordValid(value.trim() !== '');
     setIsNewPasswordValid(value1.trim() !== '');
     setIsConfirmPasswordValid(value2.trim() !== '');
@@ -152,21 +152,21 @@ export default function Administration() {
     });
   };
 
-  return (
+return (      
     <div>
-      <Toast ref={toast} />
-      <BreadCrumb style={{ position: "absolute", top: 99, left: 345, width: "71%" }} model={items} home={home} />
-      <Layout></Layout>
-      <Card id="Administrationcardcontainer">
-        <Card id="Administrationcard">
-          <TabView>
-            <TabPanel header={<span style={{ color: 'black' }}>Create User</span>} >
-              <Accordion >
-                <AccordionTab style={{ textAlign: "left", position: "sticky", height: "620px" }} header="Create User">
-                  <div style={{ height: '100px', marginTop: -550 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', marginBottom: '' }}>
-                      <p style={{ marginRight: '40px' }}>Business Name</p>&nbsp;&nbsp;
-                      <InputText type="text" id="inputtext" />
+    <Toast ref={toast} />
+    <BreadCrumb style={{ position: "absolute", top: 99, left: 345, width: "71%" }} model={items} home={home} />
+    <Layout></Layout>
+    <Card id="Administrationcardcontainer">
+      <Card id="Administrationcard">
+        <TabView>
+          <TabPanel header={<span style={{ color: 'black',position:"unset" }}>Create User</span>} >
+            <Accordion >
+              <AccordionTab  header={<span style={{ color: 'black' }}>Create User</span>} style={{ textAlign: "left", position: "sticky", height: "620px" }} >
+                <div style={{ height: '100px', marginTop: -550 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '' }}>
+                    <p style={{ marginRight: '40px' }}>Business Name</p>&nbsp;&nbsp;
+                    <InputText type="text" id="inputtext" />
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '' }}>
                       <p style={{ marginRight: '74px' }}>First Name</p>&nbsp;&nbsp;
@@ -255,7 +255,7 @@ export default function Administration() {
             </TabPanel>
             <TabPanel header={<span style={{ color: 'black',position:"sticky" }}>User Management</span>}>
               <Accordion>
-                <AccordionTab style={{ textAlign: "left",position:"sticky" }} header="User Management">
+                <AccordionTab  header={<span style={{ color: 'black' }}>User Management</span>} style={{ textAlign: "left",position:"sticky" }} >
                   <div style={{
                     display: "grid",
                     gridTemplateColumns: "1fr 1fr",
@@ -290,7 +290,7 @@ export default function Administration() {
             </TabPanel>
             <TabPanel header={<span style={{ color: 'black',position:"sticky" }}>Update Profile</span>}>
               <Accordion>
-                <AccordionTab style={{ textAlign: "left",position:"sticky" }} header="Change Password">
+                <AccordionTab style={{ textAlign: "left",position:"sticky" }}  header={<span style={{ color: 'black' }}>Change Password</span>}>
                   <div style={{
                     display: "grid",
                     gridTemplateColumns: "1fr 1fr",
@@ -311,7 +311,7 @@ export default function Administration() {
                     <div style={{ marginLeft: 270 }}> <Button id="sumbitbtnn" label="Submit" onClick={handleSubmit} /></div>
                   </div>
                 </AccordionTab>
-                <AccordionTab style={{ textAlign: "left" }} header="Change Security Question And Answer">
+                <AccordionTab  header={<span style={{ color: 'black' }}>Change Security Question And Answer</span>} style={{ textAlign: "left" }} >
                   <div
                     style={{
                       display: "grid",

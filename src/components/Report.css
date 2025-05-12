@@ -43,8 +43,8 @@
 
 #Closebtn {
     position: absolute;
-    left: 25vw;
-    top: 33vh;
+    left: 24.3vw;
+    top: 35vh;
     color: #ffffff;
     background-color: #1f7ef2;
     height: 2.4rem;
@@ -52,8 +52,8 @@
 
 #sumbitbtn1 {
     position: absolute;
-    left: 18vw;
-    top: 33vh;
+    left: 17vw;
+    top: 35vh;
     color: #ffffff;
     background-color: #1f7ef2;
     height: 2.4rem;
@@ -63,6 +63,7 @@
     height: 2.3rem;
     width: 255px;
     border-right: #82abdf solid 7px;
+    border-radius: 10px;
 }
 #inputtextdropdown:hover {
     border-right: #1f7ef2 solid 7px;
