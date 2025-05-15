@@ -21,7 +21,7 @@ export default function Activity() {
    <p style={{textAlign:"left"}}>First Name:</p>
    <p style={{textAlign:"left"}}>No statement(s) found!</p>
    <p style={{marginLeft:-250,marginTop:-77}}>Last Name:</p>
-   <p style={{marginLeft:400,marginTop:-40}}>Available Balance:20$</p>
+   <p style={{marginLeft:400,marginTop:-40}}>Available Balance:&nbsp;&nbsp; <div className=""></div><b>20$</b></p>
 
   </TabPanel>
 </TabView>

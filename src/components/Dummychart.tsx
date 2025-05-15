@@ -12,7 +12,7 @@ export default function BasicDemo() {
         const data = {
             labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
             datasets: [
-                {
+                { 
                     label: 'Total Spendings',
                     data: [340, 725, 500, 620, 480, 1000],
                     backgroundColor: [

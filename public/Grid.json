@@ -57,7 +57,7 @@
     "lastRequest": "2025-05-15",
     "clientName": "Vikas",
     "noOfCards": 8,
-    "recordCreated": "Admin"    
+    "recordCreated": "Admin"
   },
   {
     "orderId": "129",
@@ -199,45 +199,44 @@
     "noOfCards": 4,
     "recordCreated": "Admin"
   },
-
-{
-  "orderId": "143",
-  "requestDate": "2025-05-28",
-  "createDate": "2025-05-29",
-  "status": "Pending",
-  "lastRequest": "2025-05-30",
-  "clientName": "Kunal",
-  "noOfCards": 10,
-  "recordCreated": "Admin"
-},
-{
-  "orderId": "144",
-  "requestDate": "2025-05-29",
-  "createDate": "2025-05-30",
-  "status": "Approved",
-  "lastRequest": "2025-05-31",
-  "clientName": "Ritika",
-  "noOfCards": 5,
-  "recordCreated": "Admin"
-} ,      
-{
-  "orderId": "145",
-  "requestDate": "2025-05-30",
-  "createDate": "2025-05-31",
-  "status": "Rejected",
-  "lastRequest": "2025-06-01",
-  "clientName": "Siddharth",
-  "noOfCards": 3,
-  "recordCreated": "Admin"
-},
-{
-  "orderId": "146",
-  "requestDate": "2025-06-01",
-  "createDate": "2025-06-02",
-  "status": "Approved",
-  "lastRequest": "2025-06-03",
-  "clientName": "Nisha",
-  "noOfCards": 7,
-  "recordCreated": "Admin"
-}
+  {
+    "orderId": "143",
+    "requestDate": "2025-05-28",
+    "createDate": "2025-05-29",
+    "status": "Pending",
+    "lastRequest": "2025-05-30",
+    "clientName": "Kunal",
+    "noOfCards": 10,
+    "recordCreated": "Admin"
+  },
+  {
+    "orderId": "144",
+    "requestDate": "2025-05-29",
+    "createDate": "2025-05-30",
+    "status": "Approved",
+    "lastRequest": "2025-05-31",
+    "clientName": "Ritika",
+    "noOfCards": 5,
+    "recordCreated": "Admin"
+  },
+  {
+    "orderId": "145",
+    "requestDate": "2025-05-30",
+    "createDate": "2025-05-31",
+    "status": "Rejected",
+    "lastRequest": "2025-06-01",
+    "clientName": "Siddharth",
+    "noOfCards": 3,
+    "recordCreated": "Admin"
+  },
+  {
+    "orderId": "146",
+    "requestDate": "2025-06-01",
+    "createDate": "2025-06-02",
+    "status": "Approved",
+    "lastRequest": "2025-06-03",
+    "clientName": "Nisha",
+    "noOfCards": 7,
+    "recordCreated": "Admin"
+  }
 ]

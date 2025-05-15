@@ -8,7 +8,7 @@ interface DataRow {
   Accountnumber: string;
   requestdate: string;
   transfertype: string;
-  Ammounttotransfer:number;
+  Amounttotransfer:number;
   DateFundsAffected:Date;
  Scheduled:Date;
  user:string;
@@ -31,7 +31,7 @@ const DummyReportusermanagement: React.FC = () => {
         <Column field="Accountnumber" header="Account Number" sortable></Column>
         <Column field="requestdate" header="Request Date" sortable></Column>
         <Column field="transfertype" header="Transfer Type" sortable></Column>
-        <Column field="Ammountotransfer" header="Amount to transfer" sortable></Column>
+        <Column field="Amountotransfer" header="Amount to transfer" sortable></Column>
         <Column field="DateFundsAffected" header="Date Funds Affected" sortable></Column>
         <Column field="Scheduled" header="Scheduled" sortable></Column>
         <Column field="user" header="user" sortable></Column>

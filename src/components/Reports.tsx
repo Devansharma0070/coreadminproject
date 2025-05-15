@@ -125,7 +125,7 @@ export default function Reports() {
             <Layout />
             <Card id="cardcontainer">
                 <TabView style={{ marginTop: -43 }} activeIndex={activeIndex} onTabChange={handleTabChange}>
-                    <TabPanel header={<span style={{ color: 'black' }}>Buisness Account</span>}>
+                    <TabPanel header={<span style={{ color: 'black' }}>Business Account</span>}>
                         <Card className="cardreport">
                             <h4 style={{ textAlign: "left", position: "absolute", top: 135 }}>Select A Report</h4>
                             <Dropdown

@@ -38,7 +38,7 @@ export default function Administration1() {
     { name: 'Chess Financial' },
     { name: 'Choctaw Nation Prepaid ADC' },
     { name: ' Conv Govt Assistance - CN ADC Group' },
-    { name: '  Conv Govt Assistance - MCN ADC Group' },
+    { name: '  Conv Govt Assistance - MCN ADC Group' }, 
     { name: '  Conveneient  Visa TravelMoney Card' },
     { name: ' Conveneint Visa Gift Card ' },
     { name: '  Convenient Visa Payroll ADC' },
@@ -152,7 +152,7 @@ export default function Administration1() {
             {showReport && (
               <div>
                 <br></br><br></br><br></br>
-                <DummyReport></DummyReport>
+            <DummyReport></DummyReport> 
               </div>
             )}
           </TabPanel>

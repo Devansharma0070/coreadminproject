@@ -312,7 +312,7 @@ const status=[
     
   </div>
   <div style={{ display: "flex", alignItems: "center" }}>
-    <p>Account Number:</p>&nbsp;&nbsp;&nbsp;&nbsp;<b>234352525365</b>
+    <p>Account Number:</p>&nbsp;&nbsp;&nbsp;&nbsp;<b>2334****1789</b>
    
   </div>
   <div style={{ display: "flex", alignItems: "center" }}>
@@ -357,7 +357,7 @@ const status=[
    
   </div>
   <div style={{ display: "flex", alignItems: "center" }}>
-    <p>Ammount OF Transfer:</p>&nbsp;
+    <p>Amount OF Transfer:</p>&nbsp;
     <InputNumber 
                   value={transferAmount} 
                   onValueChange={e => setTransferAmount(e.value)} 
