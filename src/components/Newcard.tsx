@@ -10,8 +10,8 @@ import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { InputOtp } from 'primereact/inputotp';
 import { Card } from "primereact/card";
-
 import { Instantdummydata } from "./Instantdummydata";
+
 
 export default function Newcard() {
   const items: MenuItem[] = [{ label: 'New Card' }];
@@ -171,7 +171,7 @@ const home: MenuItem = { icon: 'pi pi-credit-card' };
                   {!showInstantData && (
                     <>
                       <div style={{ display: "flex", flexDirection: "column" }} >
-                        <p>Full Name: </p> <InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }} value={fullName} onChange={e => setFullName(e.target.value)} />
+                        <p>Full Name: </p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }} value={fullName} onChange={e => setFullName(e.target.value)} />
                         <p>Bulk Ship Address 1:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }} value={address1} onChange={e => setAddress1(e.target.value)} />
                         <p>Country:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }} value={country} onChange={e => setCountry(e.target.value)} />
                         <p>Quantity:</p><InputText id="it1" style={{ marginLeft: 208, marginTop: -45 }} value={quantity} onChange={e => setQuantity(e.target.value)} />
@@ -188,7 +188,6 @@ const home: MenuItem = { icon: 'pi pi-credit-card' };
                         <Button style={{ marginLeft: 693, position: "unset" }} id="sumbitbtn" label="Create" onClick={handleCreateAndDownload} />
                         <Button style={{ marginLeft: 7, position: "unset" }} id="sumbitbtn" label="Search" onClick={handleSearchClick} />
                       </div>
-
                     </>
                   )}
                   {showInstantData && (

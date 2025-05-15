@@ -48,12 +48,12 @@ export const DummyDataGrid = ({ filterOrderId }: DummyDataGridProps) => {
   return (
     <div>
       <DataTable value={filteredData} paginator rows={5}>
-        <Column field="orderId" header="Order ID" sortable />
+        <Column field="orderId" header="Order ID"  sortable />
         <Column field="requestDate" header="Request Date" sortable />
         <Column field="createDate" header="Create Date" sortable />
         <Column field="status" header="Status" sortable />
         <Column field="lastRequest" header="Last Request" sortable />
-        <Column field="clientName" header="Client Name" sortable />
+        <Column field="clientName" header="Client Name"  sortable />
         <Column field="noOfCards" header="No. of Cards" sortable />
         <Column field="recordCreated" header="Record Created" sortable />
       </DataTable>

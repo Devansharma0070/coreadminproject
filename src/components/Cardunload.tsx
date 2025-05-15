@@ -9,6 +9,7 @@ import Layout from './Layout/Layout';
 import { Card } from 'primereact/card';
 import './Cardunload.css';
 import { TabPanel, TabView } from 'primereact/tabview';
+import { Button } from 'primereact/button';
 
 
 interface Customer {
@@ -214,7 +215,9 @@ export default function CustomersDemo() {
                     <Column field="cardNo" header="Card No" sortable filter filterPlaceholder="Search by card no" style={{ minWidth: '14rem' }} body={cardNoBodyTemplate} />
                     <Column field="availableBalance" header="Available Balance" sortable style={{ minWidth: '14rem' }} body={availableBalanceBodyTemplate} />
                 </DataTable>
-      
+
+  
+
                   </TabPanel>
                    
                 

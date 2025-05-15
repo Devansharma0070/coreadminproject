@@ -176,7 +176,7 @@ const status=[
 
   return (
     <div>
-      <Toast ref={toast} /> {/* Add Toast component */}
+      <Toast ref={toast} /> 
        <BreadCrumb style={{ position: "absolute", top: 80, left: 350, width: "100%" }} model={items} home={home} />
               <Layout />
       <Layout />
@@ -185,7 +185,7 @@ const status=[
           <TabPanel style={{position:"unset"}}   header={<span style={{ color: 'black' }}>External Transfer</span>} >
           <div>
             <p style={{textAlign:"left"}}>Account Balance:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>300$</b></p>
-            <p style={{textAlign:"left"}}>*Initiate Transfers Between External Bank Account And Business Account</p>
+            <b><p style={{textAlign:"left"}}>*Initiate Transfers Between External Bank Account And Business Account</p></b>
           
           </div>
           
@@ -204,7 +204,7 @@ const status=[
                 </div>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <p>Request Date:</p>&nbsp;&nbsp;&nbsp;&nbsp;
-                <Calendar value={requestDate} onChange={(e) => setRequestDate(e.value)} />
+              <Calendar value={requestDate} onChange={(e) => setRequestDate(e.value)} />
               </div>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <p>When:</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -246,7 +246,7 @@ const status=[
             <DataTable 
               value={products} 
               selection={selectedProducts} 
-              onSelectionChange={e => setSelectedProducts(e.value as Product[])} 
+            l
               dataKey="Accountnumber"
               paginator
               rows={2}
