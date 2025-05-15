@@ -6,11 +6,19 @@ import { InputNumber } from "primereact/inputnumber";
 import { Nullable } from "primereact/ts-helpers";
 import { DummyDataGrid } from "./DummyDataGrid";
 
+
+
 export const Instantdummydata = () => {
   const [date, setDate] = useState<Nullable<Date>>(null);
   const [value, setValue] = useState<number | null>(null);
   const [date1, setDate1] = useState<Nullable<Date>>(null);
   const [status, setStatus] = useState<string | null>(null);
+
+
+const handleBackClick = () => {
+  window.location.href = "/newcard?tab=instant";
+};
+
   const [showGrid, setShowGrid] = useState(false);
 const [filterOrderId, setFilterOrderId] = useState<string | null>(null);
 
@@ -23,7 +31,7 @@ const [filterOrderId, setFilterOrderId] = useState<string | null>(null);
   ];
 
   const handleSearch = () => {
-    setFilterOrderId(value ? `ORD${value}` : null); 
+    setFilterOrderId(value ? `${value}` : null); 
     setShowGrid(true);
   };
 
@@ -103,7 +111,7 @@ const [filterOrderId, setFilterOrderId] = useState<string | null>(null);
         </div>
         <div style={{ display: "flex", alignItems: "center"}}>
           <p>Last Request</p>
-          &nbsp;
+          &nbsp;&nbsp;
           <InputNumber id="it1" />
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginTop: 15 }}>
@@ -116,9 +124,12 @@ const [filterOrderId, setFilterOrderId] = useState<string | null>(null);
   style={{ marginLeft: 15, zIndex:1 ,position:"unset"}}
     id="sumbitbtn"
     label="Back"
-  />
-</div>
+    onClick={handleBackClick}
 
+    
+  />
+
+</div>
       </div>
       <br></br>
       <br></br>

@@ -1,44 +1,45 @@
-#Administrationcardcontainer{
+#Administrationcardcontainer {
     width: 70rem;
-    height:55rem;
+    height: 55rem;
     margin-left: 162px;
     margin-top: 122px;
 }
 
-#Administrationcard{
+#Administrationcard {
     width: 65rem;
-    height:50rem;
+    height: 50rem;
     margin-left: 12px;
-  
+
 }
 
 
-#Adminrhs{
+#Adminrhs {
 
     margin-left: 500px;
-   margin-top: -425px;
+    margin-top: -425px;
 
 }
 
-#searchbtn{
+#searchbtn {
 
     width: 100px;
     background-color: rgb(8, 147, 240);
     border: none;
     outline: none;
     margin-left: 787px;
-    
+
 }
 
-#sumbitbtnn{
+#sumbitbtnn {
     width: 100px;
     background-color: rgb(8, 147, 240);
     border: none;
     outline: none;
-    
+
 
 }
-.password{
+
+.password {
     width: 252px;
     border-radius: 7px;
 }

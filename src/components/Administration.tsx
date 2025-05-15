@@ -26,7 +26,7 @@ export default function Administration() {
   const [securityAnswer, setSecurityAnswer] = useState<string>('');
   const [confirmSecurityAnswer, setConfirmSecurityAnswer] = useState<string>('');
   const items: MenuItem[] = [{ label: 'Administration' }];
-  const home: MenuItem = { icon: 'pi pi-users',  }
+  const home: MenuItem = { icon: 'pi pi-users', }
   const [selectedquestion, setSelectedquestion] = useState(null);
   const [isCurrentPasswordValid, setIsCurrentPasswordValid] = useState(true);
   const [isNewPasswordValid, setIsNewPasswordValid] = useState(true);
@@ -61,7 +61,7 @@ export default function Administration() {
   ];
 
   const handleSubmit = () => {
- 
+
     setIsCurrentPasswordValid(value.trim() !== '');
     setIsNewPasswordValid(value1.trim() !== '');
     setIsConfirmPasswordValid(value2.trim() !== '');
@@ -107,7 +107,7 @@ export default function Administration() {
   };
 
   const handleSecuritySubmit = () => {
-    // Validate inputs
+
     setIsSelectedQuestionValid(!!selectedquestion);
     setIsSecurityAnswerValid(securityAnswer.trim() !== '');
     setIsConfirmSecurityAnswerValid(confirmSecurityAnswer.trim() !== '');
@@ -152,21 +152,21 @@ export default function Administration() {
     });
   };
 
-return (      
+  return (
     <div>
-    <Toast ref={toast} />
-    <BreadCrumb style={{ position: "absolute", top: 99, left: 345, width: "71%" }} model={items} home={home} />
-    <Layout></Layout>
-    <Card id="Administrationcardcontainer">
-      <Card id="Administrationcard">
-        <TabView>
-          <TabPanel header={<span style={{ color: 'black',position:"unset" }}>Create User</span>} >
-            <Accordion >
-              <AccordionTab  header={<span style={{ color: 'black' }}>Create User</span>} style={{ textAlign: "left", position: "sticky", height: "620px" }} >
-                <div style={{ height: '100px', marginTop: -550 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '' }}>
-                    <p style={{ marginRight: '40px' }}>Business Name</p>&nbsp;&nbsp;
-                    <InputText type="text" id="inputtext" />
+      <Toast ref={toast} />
+      <BreadCrumb style={{ position: "absolute", top: 99, left: 345, width: "71%" }} model={items} home={home} />
+      <Layout></Layout>
+      <Card id="Administrationcardcontainer">
+        <Card id="Administrationcard">
+          <TabView>
+            <TabPanel header={<span style={{ color: 'black', position: "unset" }}>Create User</span>} >
+              <Accordion >
+                <AccordionTab header={<span style={{ color: 'black' }}>Create User</span>} style={{ textAlign: "left", position: "sticky", height: "620px" }} >
+                  <div style={{ height: '100px', marginTop: -550 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', marginBottom: '' }}>
+                      <p style={{ marginRight: '40px' }}>Business Name</p>&nbsp;&nbsp;
+                      <InputText type="text" id="inputtext" />
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '' }}>
                       <p style={{ marginRight: '74px' }}>First Name</p>&nbsp;&nbsp;
@@ -253,9 +253,9 @@ return (
                 </AccordionTab>
               </Accordion>
             </TabPanel>
-            <TabPanel header={<span style={{ color: 'black',position:"sticky" }}>User Management</span>}>
+            <TabPanel header={<span style={{ color: 'black', position: "sticky" }}>User Management</span>}>
               <Accordion>
-                <AccordionTab  header={<span style={{ color: 'black' }}>User Management</span>} style={{ textAlign: "left",position:"sticky" }} >
+                <AccordionTab header={<span style={{ color: 'black' }}>User Management</span>} style={{ textAlign: "left", position: "sticky" }} >
                   <div style={{
                     display: "grid",
                     gridTemplateColumns: "1fr 1fr",
@@ -288,9 +288,9 @@ return (
                 </AccordionTab>
               </Accordion>
             </TabPanel>
-            <TabPanel header={<span style={{ color: 'black',position:"sticky" }}>Update Profile</span>}>
+            <TabPanel header={<span style={{ color: 'black', position: "sticky" }}>Update Profile</span>}>
               <Accordion>
-                <AccordionTab style={{ textAlign: "left",position:"sticky" }}  header={<span style={{ color: 'black' }}>Change Password</span>}>
+                <AccordionTab style={{ textAlign: "left", position: "sticky" }} header={<span style={{ color: 'black' }}>Change Password</span>}>
                   <div style={{
                     display: "grid",
                     gridTemplateColumns: "1fr 1fr",
@@ -311,7 +311,7 @@ return (
                     <div style={{ marginLeft: 270 }}> <Button id="sumbitbtnn" label="Submit" onClick={handleSubmit} /></div>
                   </div>
                 </AccordionTab>
-                <AccordionTab  header={<span style={{ color: 'black' }}>Change Security Question And Answer</span>} style={{ textAlign: "left" }} >
+                <AccordionTab header={<span style={{ color: 'black' }}>Change Security Question And Answer</span>} style={{ textAlign: "left" }} >
                   <div
                     style={{
                       display: "grid",
@@ -365,7 +365,7 @@ return (
                     </div>
 
                   </div>
-                  <div><Button id="sumbitbtnn" label="Submit" style={{marginLeft:800}} onClick={handleSecuritySubmit} /></div>
+                  <div><Button id="sumbitbtnn" label="Submit" style={{ marginLeft: 800 }} onClick={handleSecuritySubmit} /></div>
                 </AccordionTab>
               </Accordion>
             </TabPanel>

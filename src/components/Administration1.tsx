@@ -105,9 +105,9 @@ export default function Administration1() {
   const [showReport, setShowReport] = useState(false);
 
   const handleGoClick = () => {
-    
-      setShowReport(true);
-   
+
+    setShowReport(true);
+
   };
 
   return (
@@ -115,7 +115,7 @@ export default function Administration1() {
       <Layout></Layout>
 
       <Card style={{ position: "absolute", left: 350, top: 122, width: 1400, height: 2000 }}>
-            <h1 style={{textAlign:"left",fontFamily:"serif"}}>ADC Group</h1>
+        <h1 style={{ textAlign: "left", fontFamily: "serif" }}>ADC Group</h1>
         <TabView>
           <TabPanel header="ADC">
 
@@ -145,7 +145,7 @@ export default function Administration1() {
                   placeholder="Select" className="w-full md:w-14rem" />
               </div>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <Button style={{position:"absolute",top:360,left:1100}} id="gobtn" label="Go" onClick={handleGoClick} className="p-button-primary" />
+                <Button style={{ position: "absolute", top: 360, left: 1100 }} id="gobtn" label="Go" onClick={handleGoClick} className="p-button-primary" />
               </div>
 
             </div>

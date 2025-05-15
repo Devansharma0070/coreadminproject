@@ -267,14 +267,16 @@ const status=[
 
             {transferRecords.length > 0 && (
               <>
-                 <br></br> <br></br> <br></br> <br></br>
-                <DataTable 
+                 
+                 <Card style={{marginLeft:"-41px",marginTop:"-22px"}}><DataTable 
                   value={transferRecords} 
                   paginator 
+            
                       rows={5} 
                   rowsPerPageOptions={[5, 10, 20]} 
                   tableStyle={{ minWidth: '100%' }}
                   dataKey="Accountnumber"
+                 
                 >
                   <Column field="BankName" header="Bank Name" sortable style={{ minWidth: '150px' }}></Column>
                   <Column field="Accountowner" header="Account Owner" sortable style={{ minWidth: '150px' }}></Column>
@@ -291,7 +293,8 @@ const status=[
                         header="Actions"
                         style={{ width: '8rem', textAlign: 'center' }}
                     />
-                </DataTable>
+                </DataTable></Card>
+                
               </>
             )}
           </TabPanel>

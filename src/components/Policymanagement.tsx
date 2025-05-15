@@ -8,7 +8,6 @@ import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
 import { InputText } from "primereact/inputtext";
 import { Accordion, AccordionTab } from 'primereact/accordion';
-import { Paginator } from 'primereact/paginator';
 import { InputNumber } from "primereact/inputnumber";
 import { BreadCrumb } from 'primereact/breadcrumb';
 import { MenuItem } from 'primereact/menuitem';
